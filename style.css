@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.nav-list{
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+}
+.underline{
+  
+    height: 1.1px;
+    background-color: #d0c3d4;
+    transition: all .2s ease-in;
+    
+}
+.liTags{
+    opacity: 0.8;
+}
+.liTags:hover{
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
