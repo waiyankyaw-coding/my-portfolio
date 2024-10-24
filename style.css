@@ -21,3 +21,12 @@
     opacity: 1;
     transition: opacity .2s ease-in-out;
 }
+.bt-con:hover .icon{
+    color: #0284C7;
+    transform: translateX(10px) rotate(360deg) scale(1.1);
+    transition: all .4s ease;
+  
+}
+.complete-download{
+    transition: top 1s ease-in-out;
+};

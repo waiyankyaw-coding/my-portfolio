@@ -23,11 +23,28 @@ for(let i = 0; i< navListArray.length; i++){
        line.style.transform = `translateX(${liIndivitualWidth}px)`;
      
     });
-  
-    
-   
-
-
-
 };
+
+//downloaded toaster
+let button = document.querySelector(".bt");
+let downloadedToaster = document.querySelector(".complete-download");
+let offHight = downloadedToaster.offsetHeight;
+downloadedToaster.style.top = `-${offHight}`+"1"+"px";
+button.addEventListener("click",()=>{
+setTimeout(()=>{
+    downloadedToaster.style.top = "30px";
+},100)
+
+setTimeout(()=>{
+    downloadedToaster.style.top = `-${offHight}`+"1"+"px";;
+},4000)
+   
+});
+console.log(offHight)
+
+
+
+
+
+
    

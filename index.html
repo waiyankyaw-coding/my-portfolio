@@ -9,17 +9,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0fc8275b07.js" crossorigin="anonymous"></script>
     <title>waiyankyaw.portfolio</title>
 </head>
 <body>
     <div class="hero-section w-full h-screen  bg-[url('images/bgimg.jpg')] bg-no-repeat bg-cover">
-        <div class="nav-bars pt-[30px] flex justify-between">
+        <div class="nav-bars pt-[30px] flex justify-between cursor-pointer sticky top-0 "><!--Nav bar sec-->
             <div class="owner text-sky-400 font-[300] ml-[30px] text-[1.2vw] select-none">MY PORTFOLIO</div>
             <ul class="nav-list text-sky-400 flex gap-14 text-[1.1vw] mr-[50px] select-none "></ul>
         </div>
-        <div class="underline ml-[30px] mr-[50px]"></div>
+        <div class="underline ml-[30px] mr-[50px] fixed"></div>
+
+        <div class="hero-content-container select-none"> <!--hero-content-->
+            <div class="text-white pt-[190px]">
+                  <div class="pl-[100px]">
+                    <span class="text-[2vw] text-[#CACECF]">I'am</span>
+                    <span class="text-[2.9vw] pl-[5px] font-['Permanent Marker'] text-[#BEBC58]">WAI YAN KYAW,</span>
+                  </div>
+                 <div class="pl-[30px] leading-[50px] text-[1.6vw] text-[#CACECF]">a passionate Front-end developer focused on crafting visually appealing <br>and high-performance websites with React.js</div>
+            </div>         
+           
+        </div>
+        <div class="flex items-center gap-[5px] ml-[150px] mt-[45px] bt-con w-[170px] cursor-pointer"><!--Download Resume button-->
+            <a href="CV/Mr. Wai Yan Kyaw  CV.pdf" download="CV/Mr. Wai Yan Kyaw  CV.pdf">
+              <button class=" bt bg-sky-300 text-[black]  text-center text-[1.1vw] rounded-[6px] font-[sans-serif] p-[7px] hover:bg-sky-600 hover:scale-[1.1] transistion-all duration-[.2s] ease-in-out">Download Resume</button>
+            </a>
+            <i class="fa-solid fa-file-arrow-down text-[2.7vw] text-sky-300 icon"></i>
+       
+        </div>
+
+           <div class="complete-download bg-sky-100 flex gap-[5px] items-center justify-center w-[260px] p-[10px] rounded-[3px] border-[1px] border-sky-400 fixed top-[30px] left-[340px]">
+            
+            <div class="font-[sans-serif] text-center">File downloaded successfully</div>
+            <i class="fa-regular fa-circle-check text-[1.3vw] text-center text-[#198754]"></i>
+            
+                
+
+           </div>
 
     </div>
+    
     <script src="myportfolio.js"></script>
 </body>
 </html>
