@@ -29,4 +29,128 @@
 }
 .complete-download{
     transition: top 1s ease-in-out;
-};
+}
+.animation-one{
+
+    animation: one 4s infinite ease-in-out;
+}
+.animation-two{
+
+    animation: two 5s infinite ease-in-out;
+}
+.animation-three{
+
+    animation: three 7s infinite ease-in-out;
+}
+.sliding-animation{
+animation: sliding 4s infinite ease-in-out;
+opacity: 0.1;
+}
+.sliding-animation-two{
+    animation: sliding-two 5s infinite ease-in-out;
+    opacity: 0.1;
+    }
+
+    /*About*/
+
+  
+@keyframes one{
+    from{opacity:0};
+    to{opacity: 0.2};
+}
+@keyframes two{
+    from{opacity:0};
+    to{opacity: 0.2};
+}
+@keyframes three{
+    from{opacity:0};
+    to{opacity: 0.1};
+}
+@keyframes sliding{
+    from{width: 450px};
+    to{width: 50px};
+}
+@keyframes sliding-two {
+    from{width: 450px};
+    to{width: 0px};
+}
+
+/*About section*/
+.about-world-img{
+    transition: all .4s ease-in-out;
+  animation: about-circle 15s infinite ease-in-out;
+}
+@keyframes about-circle {
+    from{transform: rotate(0deg);};
+    to{transform: rotate(360deg);};
+}
+
+/* contact*/
+ .contact-circle-animation{
+    transition: all .4s ease-in-out;
+    animation: contact-circle 15s infinite ease-in-out;
+ }
+ @keyframes contact-circle {
+    from{transform: rotate(0deg);};
+    to{transform: rotate(360deg);};
+}
+
+
+/* Hero section custom responsive */
+/*
+@media screen and (max-width: 1920px){    
+  
+    .owner{
+        margin-left: 100px;
+        
+      }
+      .nav-list{
+        margin-right: 100px;
+      }
+      .underline{
+        height: 2px;
+      }
+      .nav-bars{
+        padding-top: 50px;
+      }
+      .hero-content-container{
+        line-height: 50px;
+        padding-left: 50px;
+        padding-top: 40px;
+      }
+     
+      .button-div{
+        margin-top: 250px;
+        width: 300px;
+ 
+    }
+    .bt{
+        height:52px;
+    }
+    .animation-one{
+        top: 300px; 
+        left: 700px;
+        opacity: 0.3;
+    }
+    .animation-two{
+        top: 550px;
+        left: 700px;
+        opacity: 0.4;
+    }
+    .animation-three{
+        top: 200px;
+        scale: 2.2;
+        opacity: 0.1;
+    }
+    .sliding-animation{
+        top: 380px;
+        left: 500px;
+      opacity: 0.2;
+    }
+    .sliding-animation-two{
+        opacity: 0.3;
+    }
+   .complete-download{
+    left: 700px;
+   }
+} */

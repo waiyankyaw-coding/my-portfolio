@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <link rel="icon" type="image/x-icon" href="/images/photo_2024-10-22_15-58-26.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -13,32 +13,62 @@
     <title>waiyankyaw.portfolio</title>
 </head>
 <body>
-    <div class="hero-section w-full h-screen  bg-[url('images/bgimg.jpg')] bg-no-repeat bg-cover">
-        <div class="nav-bars pt-[30px] flex justify-between cursor-pointer sticky top-0 "><!--Nav bar sec-->
-            <div class="owner text-sky-400 font-[300] ml-[30px] text-[1.2vw] select-none">MY PORTFOLIO</div>
-            <ul class="nav-list text-sky-400 flex gap-14 text-[1.1vw] mr-[50px] select-none "></ul>
+    <div class="hero-section w-full h-screen  bg-[url('images/bgimg.jpg')] bg-no-repeat bg-cover home-page-background">
+        <div class="nav-bars  h-[60px] flex justify-between items-center cursor-pointer sticky top-0 bg-[#0F1019] z-20"><!--Nav bar sec-->
+            <div class="owner text-sky-400 font-[300] ml-[30px] text-[1.2vw] select-none 
+             max-[1536px]:ml-[50px]
+             ">MY PORTFOLIO</div>
+            <ul class="nav-list text-sky-400 flex gap-14 text-[1.1vw] mr-[50px] select-none  "></ul>
         </div>
-        <div class="underline ml-[30px] mr-[50px] fixed"></div>
+        <div class="underline ml-[30px] mr-[50px] fixed top-[40px] z-30
+        max-[1280px]:h-[1px]
+        max-[1536px]:h-[1px]
+        max-[1920px]:h-[2px]
+        "></div><!--underline-->
+
+        <div class="home-page"> 
 
         <div class="hero-content-container select-none"> <!--hero-content-->
-            <div class="text-white pt-[190px]">
+            <div class="text-white pt-[190px] 
+            max-[1280px]:ml-[40px]
+            max-[1536px]:mt-[10x]
+            max-[1920px]: mt-[50px]
+            ">
                   <div class="pl-[100px]">
                     <span class="text-[2vw] text-[#CACECF]">I'am</span>
                     <span class="text-[2.9vw] pl-[5px] font-['Permanent Marker'] text-[#BEBC58]">WAI YAN KYAW,</span>
                   </div>
-                 <div class="pl-[30px] leading-[50px] text-[1.6vw] text-[#CACECF]">a passionate Front-end developer focused on crafting visually appealing <br>and high-performance websites with React.js</div>
+                 <div class=" hire-text pl-[30px] leading-[50px] text-[1.6vw] text-[#CACECF]">a passionate Front-end developer focused on crafting visually appealing <br>and high-performance websites with React.js</div>
             </div>         
            
         </div>
-        <div class="flex items-center gap-[5px] ml-[150px] mt-[45px] bt-con w-[170px] cursor-pointer"><!--Download Resume button-->
-            <a href="CV/Mr. Wai Yan Kyaw  CV.pdf" download="CV/Mr. Wai Yan Kyaw  CV.pdf">
-              <button class=" bt bg-sky-300 text-[black]  text-center text-[1.1vw] rounded-[6px] font-[sans-serif] p-[7px] hover:bg-sky-600 hover:scale-[1.1] transistion-all duration-[.2s] ease-in-out">Download Resume</button>
+        <div class=" button-div flex items-center gap-[5px] ml-[150px] mt-[45px] bt-con w-[170px] cursor-pointer
+         max-[1280px]:w-[170px] 
+         max-[1536px]:w-[300px]
+         max-[1920px]:w-[300px] mt-[90px]
+         "><!--Download Resume button-->
+            <a href="CV/Mr. Wai Yan Kyaw  CV.pdf" download>
+              <button class=" bt bg-sky-300 text-[black]  text-center text-[1.1vw] rounded-[6px] font-[sans-serif] p-[7px] hover:bg-sky-600 hover:scale-[1.1] transistion-all duration-[.2s] ease-in-out
+              max-[1024px]:h-[35px]
+              max-[1280px]:h-[40px]
+              max-[1408px]:h-[40px]
+              max-[1920px]:h-[51px]
+              ">Download Resume</button>
             </a>
-            <i class="fa-solid fa-file-arrow-down text-[2.7vw] text-sky-300 icon"></i>
+            <i class="fa-solid fa-file-arrow-down text-[2.7vw] text-sky-300 icon 
+            max-[1024px]:text-[3.4vw]
+            max-[1280px]:text-[3vw]
+            max-[1408px]:text-[2.8vw]
+            max-[1536px]:text-[2.5vw]
+            "></i>
        
         </div>
-
-           <div class="complete-download bg-sky-100 flex gap-[5px] items-center justify-center w-[260px] p-[10px] rounded-[3px] border-[1px] border-sky-400 fixed top-[30px] left-[340px]">
+           <!--Download toaster-->
+           <div class=" toaster complete-download bg-sky-100 flex gap-[5px] items-center justify-center w-[260px] p-[10px] rounded-[3px] border-[1px] border-sky-400 fixed  left-[340px]  z-[50] 
+           max-[1024px]:left-[200px]  scale-[0.5]
+           max-[1280px]:left-[400px] scale-[0.9]
+           max-[1536px]:left-[500px]
+           ">
             
             <div class="font-[sans-serif] text-center">File downloaded successfully</div>
             <i class="fa-regular fa-circle-check text-[1.3vw] text-center text-[#198754]"></i>
@@ -46,8 +76,269 @@
                 
 
            </div>
+           <!--animation one-->
+           <div class="animation-one w-[30px] h-[30px] rounded-[50%] bg-sky-500 rotate-[13deg] fixed left-[550px] top-[200px] 
+           max-[1536px]:left-[650px] opacity-[0.2]
+           max-[1920px]:scale-[1.3] left-[750px] top-[320px]
+           "></div>
+           <!--animation two-->
+           <div class="animation-two w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] fixed left-[450px] top-[430px] 
+           max-[1024px]:left-[400px] opacity-[0.2]
+           max-[1536px]:top-[460px] opacity-[0.2]
+           max-[1920px]:left-[670px] top-[550px]
+           "></div>
+           <!--animation three-->
+           <div class="animation-three w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] fixed left-[380px] top-[90px] 
+           max-[1024px]:left-[500px] opacity-[0.1]
+           max-[1536px]:top-[120px] scale-[2.2] opacity-[0.1]
+           max-[1920px]:top-[190px] scale-[2.3] left-[450px]
+           "></div>
+           <!--sliding animation-->
+           <div class="sliding-animation  h-[2px] bg-sky-500 absolute top-[300px] left-[190px]
+           max-[1280px]:top-[300px]
+           max-[1408px]:top-[290px] 
+           max-[1536px]:top-[320px] left-[250px] opacity-[0.2]
+           max-[1920px]:top-[410px]
+           "></div>
+           <div class="sliding-animation-two  h-[2px] bg-sky-500 absolute top-[570px] left-[245px]
+            max-[1280px]:top-[710px] opacity-[0.2]
+            max-[1408px]:top-[640px] left-[400px] opacity-[0.1]
+            max-[1536px]:left-[200px] top-[590px] opacity-[0.2]
+            max-[1920px]:top-[700px] left-[350px]
+            "></div>
+        </div> 
+
+           <!--About section-->
+
+        <div class="about-section hidden relative ">
+            <div class=" bg-[#000A13] w-full h-[140vh]">
+                <div class="">
+                    <img src="images/1e08020e88a4b5f38126e679100ae0b0.png" class=" about-world-img w-[26%]  absolute left-[830px] top-[170px] opacity-[1]">
+                    
+                </div>
+                <div class="flex items-center  gap-[10px]">
+                <div class="text-[#BD97FF] text-[1.5vw] ml-[300px] pt-[90px]">About me</div>
+                <div><i class="fa-regular fa-address-card text-[#BD97FF] pt-[95px] text-[1.5vw]"></i></div>
+                </div>
+                    <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white hover:scale-[1.1] transistion-all duration-[.5s] ease-in-out">
+                    <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">Who am I ?</div>
+                    <p class="text-[#D9C9FF] leading-[34px]"> I'm <span class="text-[#D9C9FF]  font-['Permanent Marker'] text-[1.3vw]">WAI YAN KYAW</span>, driven by a passion for front-end development <br>and crafting exceptional UI/UX</P>
+                    </div>
+
+                        <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white  hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
+                        <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">What I do ?</div>
+                        <p class="text-[#D9C9FF] leading-[34px]">  As a front-end developer, I bring ideas to life by crafting clean,
+                             efficient code and designing with the user in mind. From responsive websites to custom web applications,
+                             I’m passionate about transforming creative concepts into functional, visually engaging experiences</P>
+                        </div>
+
+                        <div class=" bg-[#262726] text-[#D9C9FF] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-[white] absolute left-[750px] bottom-[150px] hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
+                            <div class="text-[#D9C9FF]  pb-[15px] text-[1.5vw] font-medinum">Tech Stack</div>
+                            <div class=" flex flex-col gap-[50px]">
+                                <div class="flex justify-evenly">
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                <img src="./tech stack img/HTML5.png" class="w-[35%]">
+                                 <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Html</div>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                <img src="./tech stack img/4b69692130922381537fb70de345ba3d(1).png" class="w-[35%]">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Css</div>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                <img src="./tech stack img/JavaScript.png" class="w-[35%]">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Js</div>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                <img src="./tech stack img/Tailwind CSS.png" class="w-[35%]">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Tailwind</div>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                <img src="./tech stack img/Bootstrap.png" class="w-[35%]">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Bootstrap</div>
+                                    </div>
+                                </div>   
+                                <div class="flex justify-evenly"> 
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                <img src="./tech stack img/React.png" class="w-[35%]">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">React.js</div>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                        <img src="./tech stack img/3994346_code_coding_css_html_programming_icon.png" class="w-[35%]">
+                                        <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">React router</div>
+                                            </div>
+                                   
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                <img src="./tech stack img/Git.png" class="w-[35%]">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Git</div>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                <img src="./tech stack img/GitHub.png" class="w-[35%] ">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Git hub</div>
+                                    </div>
+                                    <div class="flex flex-col items-center gap-[8px]">
+                                        <img src="./tech stack img/Redux.png" class="w-[35%]">
+                                        <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Redux</div>
+                                            </div>
+                             </div>
+                            </div>
+                            </div>
+
+                          
+                            
+                            
+                            <div class="">
+                                <img src="images/e77ce0fbea4c51ae14be393b39d836ed.png" class="w-[20%]   absolute bottom-[110px] left-[220px] opacity-[0.8]">
+                                
+                            </div>
+
+
+                          
+ 
+                        
+     
+            </div>
+    
+        </div>
+
+        <!--Project section-->
+
+      <div class="project-section hidden">
+        <div class="h-screen bg-[#000A13] flex  items-center gap-[70px]">
+
+
+            <div class="ml-[200px]"><!--tempory close alert-->
+                <div class="h-[250px] w-[600px] bg-[#262726] rounded-[14px] shadow-sm shadow-[white]">
+                    <div class="text-[#D9C9FF] text-[1.5vw] p-[15px]">Enhancing Your experience !</div>
+                    <div class="text-[#D9C9FF] p-[30px] text-[1.2vw] leading-[40px] mt-[10px] ">This section is under development to bring you a better experience.<br>Thanks for your patience!</div>
+
+                </div>
+
+
+            </div>
+            <div> <img src="./images/32a65747779c036a2bcac6f133df67b7.png" class="w-[45%]"/></div>
+        </div>
+
+
+      </div>
+
+      <!--Social section-->
+      <div class="social-section hidden">
+        <div class="h-screen bg-[#000A13]">
+
+                <div class="flex items-center   gap-[10px]">
+                <div class="text-[#BD97FF] text-[1.5vw] ml-[90px] pt-[90px]">Reach me</div>
+                <div><i class="fa-regular fa-address-card text-[#BD97FF] pt-[95px] text-[1.5vw]"></i></div>
+                </div>
+
+            <div class="flex justify-center">
+               
+            
+                <div class="flex  gap-[10px]  pt-[100px] w-[500px]">
+                <div >
+                    <a href="mailto:kieekieepl@gmail.com" target="blank"><img src="./images/29262d094bc38f937a1fdf2fa66cf5c4.png" class="w-[35%] hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
+                </div>
+
+               
+                <div>
+                    <a href="https://wa.me/0553307693" target="blank"><img src="./images/d56285e392affe506ab96bc17af56a3e.png" class="w-[35.1%]  hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
+                </div>
+
+                
+                <div>
+                    <a href="https://github.com/waiyankyaw-coding" target="blank"><img src="./images/6f3e7cd48bd6b8103857adffe9b144fe.png" class="w-[35.1%]  hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
+                </div>
+
+                <div>
+                    <a href="https://www.linkedin.com/in/wai-yan-kyaw-166107333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="blank"><img src="./images/f73cb6c6c9c90c25925272d27bfdfa.png" class="w-[35.1%]  hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
+                </div>
+
+              </div>
+         </div>
+
+            <div class="ml-[390px] bg-[#262726] w-[550px] p-[20px] mt-[130px] rounded-[9px] shadow-sm shadow-white  hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
+            <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">Say Hello</div>
+            <p class="text-[#D9C9FF] leading-[34px]"> Let’s stay connected! 
+                Explore my latest projects, follow updates, 
+                or send a quick message directly. 
+                I’m always open to new opportunities, collaborations,
+                 and connecting with like-minded professionals.
+                </P>
+            </div>
+
+          </div>
+            </div>
+
+            <!--Contactsection-->
+          <div class="contact-section hidden relative ">
+
+            <div class="h-screen bg-[#000A13]">
+                     
+              <div class="ml-[90px] bg-[#262726] w-[550px] p-[20px]  rounded-[9px] shadow-sm shadow-white absolute top-[170px]">
+                <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">Contact me</div>
+                <p class="text-[#D9C9FF] leading-[34px]">
+                    Get in touch! Whether you have a question, a project in mind, or just want to connect,
+                     I’d love to hear from you. Feel free to reach out through the phone or directly via email, 
+                    and I’ll get back to you as soon as possible.
+            
+                    </P>
+                </div>
+
+
+                <div class="flex items-center  gap-[10px]">
+                    <div class="text-[#BD97FF] text-[1.5vw] absolute bottom-[90px] right-[270px] pt-[90px] opacity-[0.5]"> Dubai . UTC / GMT + 4</div>
+               
+                    </div>
+
+
+                    <div class="absolute bottom-[130px] left-[200px]">
+                        <div class="text-[#BD97FF] mb-[10px]">
+                            Live in : Dubai,United Arab Emirates
+                        </div>
+                        <div class="text-[#BD97FF] mb-[10px]"><a href="tel:+971553307693"><div>Phone : +971553307693</div></a></div>
+
+                        <div class="text-[#BD97FF] mb-[10px]"><a href="mailto:kieekieepl@gmail.com"><div>Email : kieekieepl@gmail.com</div></a></div>
+
+                        <div class="text-[#BD97FF]"><a href="https://www.google.com/maps/dir//Boulevard+Street+-+Dubai/@25.1208701,55.257404,10.25z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5f4287917f1c27:0x78bd29d63e677212!2m2!1d55.2724533!2d25.1928741?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D" target="blank"><div>Work place : Ramada by wyndham downtown dubai</div></a></div>
+                    </div>
+
+
+                    <div class="flex justify-center absolute left-[800px] top-[60px]">
+               
+            
+                        <div class="flex  gap-[10px]  pt-[100px] w-[500px]">
+                        <div >
+                            <a href="mailto:kieekieepl@gmail.com" target="blank"><img src="./images/29262d094bc38f937a1fdf2fa66cf5c4.png" class="w-[35%] hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
+                        </div>
+        
+                       
+                        <div>
+                            <a href="https://wa.me/0553307693" target="blank"><img src="./images/d56285e392affe506ab96bc17af56a3e.png" class="w-[35.1%]  hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
+                        </div>
+        
+                        
+                        <div>
+                            <a href="https://github.com/waiyankyaw-coding" target="blank"><img src="./images/6f3e7cd48bd6b8103857adffe9b144fe.png" class="w-[35.1%]  hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
+                        </div>
+        
+                        <div>
+                            <a href="https://www.linkedin.com/in/wai-yan-kyaw-166107333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="blank"><img src="./images/f73cb6c6c9c90c25925272d27bfdfa.png" class="w-[35.1%]  hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
+                        </div>
+        
+                      </div>
+                 </div>
+
+                  <div><img src="./images/1dd0e4254e8d1f751fa6215e63bb0484.png" class="w-[20%] absolute right-[250px] top-[250px] contact-circle-animation"/></div>
+
+            </div>
+            
+          </div>
+
 
     </div>
+
+  
+
+  
     
     <script src="myportfolio.js"></script>
 </body>
