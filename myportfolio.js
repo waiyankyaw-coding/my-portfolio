@@ -37,7 +37,8 @@ for(let i = 0; i< navListArray.length; i++){
         //Hidden list
         Home.style.display = "none";
         ProjectsSection.style.display = "none";
-        Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
+        Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]","h-screen");
+        Bgimage.classList.add("h-[auto]");
         Social.style.display = "none";
         Contact.style.display = "none";
 
@@ -47,11 +48,12 @@ for(let i = 0; i< navListArray.length; i++){
         
       } else{
         Home.style.display = "block";
-        Bgimage.classList.add("bg-[url('images/bgimg.jpg')]")
+        Bgimage.classList.add("bg-[url('images/bgimg.jpg')]","h-screen")
         About.style.display = "none"
         ProjectsSection.style.display = "none";
         Social.style.display = "none";
         Contact.style.display = "none";
+        Bgimage.classList.remove("h-[auto]");
       };
       //About
 
@@ -60,6 +62,7 @@ for(let i = 0; i< navListArray.length; i++){
         About.style.display = "none";
         Home.style.display = "none";
         Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
+        Bgimage.classList.add("h-[auto]");
         Social.style.display = "none";
         Contact.style.display = "none";
 
@@ -75,6 +78,7 @@ for(let i = 0; i< navListArray.length; i++){
         Home.style.display = "none";
         ProjectsSection.style.display = "none";
         Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
+        Bgimage.classList.add("h-[auto]");
         Contact.style.display = "none";
 
 
@@ -91,6 +95,7 @@ for(let i = 0; i< navListArray.length; i++){
         Home.style.display = "none";
         ProjectsSection.style.display = "none";
         Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
+        Bgimage.classList.add("h-[auto]");
 
         //blocking list
         Contact.style.display = "block";
