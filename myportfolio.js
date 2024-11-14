@@ -4,7 +4,7 @@ const ownerLabel = document.querySelector(".owner");
 const line = document.querySelector(".underline")
 const navListArray = [ "home"," about","projects","social","contact"];
 const Bgimage = document.querySelector(".home-page-background"); 
-const Home = document.querySelector(".home-page")//Home section
+const Home = document.querySelector(".home-section")//Home section
 const About = document.querySelector(".about-section")//About section
 const ProjectsSection = document.querySelector(".project-section");//Project section
 const Social = document.querySelector(".social-section");//Social section
@@ -37,8 +37,8 @@ for(let i = 0; i< navListArray.length; i++){
         //Hidden list
         Home.style.display = "none";
         ProjectsSection.style.display = "none";
-        Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]","h-screen");
-        Bgimage.classList.add("h-[auto]");
+        // Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
+        // Bgimage.classList.add("h-[auto]");
         Social.style.display = "none";
         Contact.style.display = "none";
 
@@ -48,12 +48,11 @@ for(let i = 0; i< navListArray.length; i++){
         
       } else{
         Home.style.display = "block";
-        Bgimage.classList.add("bg-[url('images/bgimg.jpg')]","h-screen")
-        About.style.display = "none"
+        About.style.display = "none";
         ProjectsSection.style.display = "none";
         Social.style.display = "none";
         Contact.style.display = "none";
-        Bgimage.classList.remove("h-[auto]");
+      
       };
       //About
 
@@ -61,8 +60,8 @@ for(let i = 0; i< navListArray.length; i++){
         //Hidden list
         About.style.display = "none";
         Home.style.display = "none";
-        Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
-        Bgimage.classList.add("h-[auto]");
+        // Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
+        // Bgimage.classList.add("h-[screen]");
         Social.style.display = "none";
         Contact.style.display = "none";
 
@@ -77,8 +76,8 @@ for(let i = 0; i< navListArray.length; i++){
         //hidden list
         Home.style.display = "none";
         ProjectsSection.style.display = "none";
-        Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
-        Bgimage.classList.add("h-[auto]");
+        // Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
+        // Bgimage.classList.add("h-[auto]");
         Contact.style.display = "none";
 
 
@@ -94,8 +93,8 @@ for(let i = 0; i< navListArray.length; i++){
         //hidden list
         Home.style.display = "none";
         ProjectsSection.style.display = "none";
-        Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
-        Bgimage.classList.add("h-[auto]");
+        // Bgimage.classList.remove("bg-[url('images/bgimg.jpg')]");
+        // Bgimage.classList.add("h-[auto]");
 
         //blocking list
         Contact.style.display = "block";
@@ -118,7 +117,7 @@ setTimeout(()=>{
 
 setTimeout(()=>{
     downloadedToaster.style.top = `-${offHight}`+"1"+"px";;
-},10000)
+},4000)
    
 });
 

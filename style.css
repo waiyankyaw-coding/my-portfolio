@@ -81,8 +81,8 @@ opacity: 0.1;
   animation: about-circle 15s infinite ease-in-out;
 }
 @keyframes about-circle {
-    from{transform: rotate(0deg);};
-    to{transform: rotate(360deg);};
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
 
 /* contact*/
