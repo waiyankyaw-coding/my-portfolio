@@ -18,7 +18,8 @@
        
 
 
-        <div class="nav-bars  h-[60px] flex justify-between items-center cursor-pointer  w-full fixed  top-[0px] bg-[#0F1019] z-20"><!--Nav bar sec-->
+        
+    <div class="nav-bars  h-[60px] flex justify-between items-center cursor-pointer  w-full fixed  top-[0px] bg-[#0F1019] z-20"><!--Nav bar sec-->
             <div class="owner text-sky-400 font-[300] ml-[30px] text-[1.2vw] select-none 
              max-[1536px]:ml-[50px]
              ">MY PORTFOLIO</div>
@@ -26,12 +27,26 @@
         </div>
 
         <div class="underline ml-[30px] mr-[50px] fixed top-[40px] z-30
-        max-[1280px]:h-[1px]
-        max-[1536px]:h-[1px]
-        max-[1920px]:h-[2px]
+       
         "></div><!--underline-->
 
-        <div class="home-section h-screen  bg-[url('images/bgimg.jpg')] bg-no-repeat bg-cover ">
+
+          <!--Download toaster-->
+          <div class=" toaster complete-download bg-sky-100 flex gap-[5px] items-center justify-center w-[260px] p-[10px] rounded-[3px] border-[1px] border-sky-400 fixed  left-[340px]  z-[50] 
+          max-[1024px]:left-[200px]  scale-[0.5]
+          max-[1280px]:left-[400px] scale-[0.9]
+          max-[1536px]:left-[500px]
+          ">
+           
+           <div class="font-[sans-serif] text-center">File downloaded successfully</div>
+           <i class="fa-regular fa-circle-check text-[1.3vw] text-center text-[#198754]"></i>
+           
+          </div>
+
+
+        <!--Home section-->
+
+        <div class="home-section h-[101vh] bg-[url('images/bgimg.jpg')] bg-no-repeat bg-cover ">
 
             <div class="hero-content-container select-none"> <!--hero-content-->
 
@@ -70,17 +85,7 @@
       
        </div>
 
-        <!--Download toaster-->
-        <div class=" toaster complete-download bg-sky-100 flex gap-[5px] items-center justify-center w-[260px] p-[10px] rounded-[3px] border-[1px] border-sky-400 fixed  left-[340px]  z-[50] 
-        max-[1024px]:left-[200px]  scale-[0.5]
-        max-[1280px]:left-[400px] scale-[0.9]
-        max-[1536px]:left-[500px]
-        ">
-         
-         <div class="font-[sans-serif] text-center">File downloaded successfully</div>
-         <i class="fa-regular fa-circle-check text-[1.3vw] text-center text-[#198754]"></i>
-         
-        </div>
+      
 
 
         <!--animation one-->
@@ -129,29 +134,29 @@
 
            <!--About section-->
 
-        <div class="about-section hidden relative ">
-            <div class=" bg-[#000A13] w-full h-[140vh]">
+        <div class="about-section hidden ">
+            <div class=" bg-[#000A13]  h-[140vh] relative overflow-hidden">
                 <div class="">
-                    <img src="images/1e08020e88a4b5f38126e679100ae0b0.png" class=" about-world-img w-[26%]  absolute left-[830px] top-[170px] opacity-[1]">
+                    <img src="images/1e08020e88a4b5f38126e679100ae0b0.png" class=" about-world-img w-[35%]  absolute right-[140px] top-[180px]  opacity-[1]">
                     
                 </div>
                 <div class="flex items-center  gap-[10px]">
                 <div class="text-[#BD97FF] text-[1.5vw] ml-[300px] pt-[90px]">About me</div>
                 <div><i class="fa-regular fa-address-card text-[#BD97FF] pt-[95px] text-[1.5vw]"></i></div>
                 </div>
-                    <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white hover:scale-[1.1] transistion-all duration-[.5s] ease-in-out">
+                    <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white hover:scale-[1.1] transition-all duration-[.5s] ease-in-out">
                     <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">Who am I ?</div>
-                    <p class="text-[#D9C9FF] leading-[34px]"> I'm <span class="text-[#D9C9FF]  font-['Permanent Marker'] text-[1.3vw]">WAI YAN KYAW</span>, driven by a passion for front-end development <br>and crafting exceptional UI/UX</P>
+                    <p class="text-[#D9C9FF] leading-[34px]"> I'm <span class="text-[#D9C9FF]  font-['Permanent Marker'] text-[1.3vw]">WAI YAN KYAW</span>, driven by a passion for front-end development <br>and crafting exceptional UI/UX</p>
                     </div>
 
                         <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white  hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
                         <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">What I do ?</div>
                         <p class="text-[#D9C9FF] leading-[34px]">  As a front-end developer, I bring ideas to life by crafting clean,
                              efficient code and designing with the user in mind. From responsive websites to custom web applications,
-                             I’m passionate about transforming creative concepts into functional, visually engaging experiences</P>
+                             I’m passionate about transforming creative concepts into functional, visually engaging experiences</p>
                         </div>
 
-                        <div class=" bg-[#262726] text-[#D9C9FF] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-[white] absolute left-[750px] bottom-[150px] hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
+                        <div class=" bg-[#262726] text-[#D9C9FF] w-[550px] p-[20px] mt-[50px] ml-[100px] rounded-[9px] shadow-sm shadow-[white]   hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
                             <div class="text-[#D9C9FF]  pb-[15px] text-[1.5vw] font-medinum">Tech Stack</div>
                             <div class=" flex flex-col gap-[50px]">
                                 <div class="flex justify-evenly">
@@ -202,13 +207,35 @@
                             </div>
                             </div>
 
-                          
-                            
-                            
+
+
+                           
+
+                            <div class="bg-[#262726]  rounded-[9px] p-[15px] w-[500px] absolute bottom-[70px] right-[120px] shadow-sm shadow-white  hover:scale-[1.1]  transition-all duration-[.5s] ease-in-out">
+                                 
+                                <div class="relative overflow-hidden">
+                                <div class="w-[15%]">
+                                    <img src="./images/photo_2024-09-21_23-02-38.jpg"/>
+                                </div>
+                               
+                                <div class="text-[#BEBC58]  pt-[10px] text-[1.4vw]">WAI YAN KYAW</div>
+                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]">Date of birth : 12,November,2003</div>
+                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]">Nationality : Myanmar (Burmese) </div>
+                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]">Gender : Male</div>
+                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]">Live in : Dubai, United Arab Emirates</div>
+
+                                <div class="w-[50%] absolute right-[-30px] top-[20px] opacity-[0.1]">
+                                    <img src="./images/3d2899655c48dc0bed3546f9d50f39c4.png"/>
+                                </div>
+
+                               </div>
+                               
+                                </div>
+                            <!--                             
                             <div class="">
-                                <img src="images/e77ce0fbea4c51ae14be393b39d836ed.png" class="w-[20%]   absolute bottom-[110px] left-[220px] opacity-[0.8]">
+                                <img src="images/e77ce0fbea4c51ae14be393b39d836ed.png" class="w-[20%]   absolute right-[0]  opacity-[0.8]">
                                 
-                            </div>
+                            </div> -->
 
 
                           
@@ -222,7 +249,7 @@
         <!--Project section-->
 
       <div class="project-section hidden">
-        <div class="h-screen bg-[#000A13] flex  items-center gap-[70px]">
+        <div class="h-[101vh] bg-[#000A13] flex  items-center gap-[70px]">
 
 
             <div class="ml-[200px]"><!--tempory close alert-->
@@ -242,7 +269,7 @@
 
       <!--Social section-->
       <div class="social-section hidden">
-        <div class="h-screen bg-[#000A13]">
+        <div class="h-[101vh] bg-[#000A13]">
 
                 <div class="flex items-center   gap-[10px]">
                 <div class="text-[#BD97FF] text-[1.5vw] ml-[90px] pt-[90px]">Reach me</div>
@@ -288,9 +315,9 @@
             </div>
 
             <!--Contactsection-->
-        <div class="contact-section hidden relative ">
+        <div class="contact-section hidden relative overflow-hidden ">
 
-            <div class="h-screen bg-[#000A13]">
+            <div class="h-[101vh] bg-[#000A13]">
                      
               <div class="ml-[90px] bg-[#262726] w-[550px] p-[20px]  rounded-[9px] shadow-sm shadow-white absolute top-[170px]">
                 <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">Contact me</div>
@@ -321,7 +348,7 @@
                     </div>
 
 
-                    <div class="flex justify-center absolute left-[800px] top-[60px]">
+                    <div class="flex justify-center absolute left-[750px] top-[60px]">
                
             
                         <div class="flex  gap-[10px]  pt-[100px] w-[500px]">
