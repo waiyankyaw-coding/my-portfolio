@@ -117,7 +117,7 @@ setTimeout(()=>{
 
 setTimeout(()=>{
     downloadedToaster.style.top = `-${offHight}`+"1"+"px";;
-},4000)
+},40000)
    
 });
 

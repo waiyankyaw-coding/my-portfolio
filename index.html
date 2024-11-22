@@ -19,44 +19,92 @@
 
 
         
-    <div class="nav-bars  h-[60px] flex justify-between items-center cursor-pointer  w-full fixed  top-[0px] bg-[#0F1019] z-20"><!--Nav bar sec-->
+    <div class="nav-bars  h-[60px] flex justify-between items-center cursor-pointer  w-full fixed  top-[0px] bg-[#0F1019] z-20
+    min-[320px]:block 
+    min-[1024px]:flex
+    "><!--Nav bar sec-->
             <div class="owner text-sky-400 font-[300] ml-[30px] text-[1.2vw] select-none 
              max-[1536px]:ml-[50px]
              ">MY PORTFOLIO</div>
-            <ul class="nav-list text-sky-400 flex gap-14 text-[1.1vw] mr-[50px] select-none  "></ul>
+            <ul class="nav-list text-sky-400 flex gap-14 text-[1.1vw] mr-[50px] select-none  
+            min-[320px]:m-[0px] gap-[1px]
+            min-[1024px]:mr-[50px] min-[1024px]:gap-14
+            "></ul>
         </div>
 
         <div class="underline ml-[30px] mr-[50px] fixed top-[40px] z-30
+        min-[1024px]:h-[0.5px]
        
         "></div><!--underline-->
 
 
           <!--Download toaster-->
           <div class=" toaster complete-download bg-sky-100 flex gap-[5px] items-center justify-center w-[260px] p-[10px] rounded-[3px] border-[1px] border-sky-400 fixed  left-[340px]  z-[50] 
-          max-[1024px]:left-[200px]  scale-[0.5]
-          max-[1280px]:left-[400px] scale-[0.9]
-          max-[1536px]:left-[500px]
+          min-[320px]:left-[30px] min-[320px]:scale-[0.6] 
+          min-[375px]:left-[55px] min-[375px]:scale-[0.6] 
+          min-[430px]:left-[80px]
+          min-[480px]:left-[110px] min-[480px]:scale-[0.7]
+           min-[640px]:left-[160px] min-[640px]:scale-[0.8]
+           min-[768px]:w-[290px] min-[768px]:left-[230px]
+           min-[1024px]:left-[210px]
+           min-[1280px]:left-[340px]
+
           ">
            
            <div class="font-[sans-serif] text-center">File downloaded successfully</div>
-           <i class="fa-regular fa-circle-check text-[1.3vw] text-center text-[#198754]"></i>
+           <i class="fa-regular fa-circle-check text-[1.3vw] text-center text-[#198754]
+           min-[320px]:text-[5vw]
+           min-[375px]:text-[5vw]
+           min-[480px]:text-[4vw]
+           min-[768px]:text-[2vw]
+           min-[1024px]:text-[1.5vw]
+           min-[1280px]:text-[1.3vw]
+           "></i>
            
           </div>
 
 
         <!--Home section-->
 
-        <div class="home-section h-[101vh] bg-[url('images/bgimg.jpg')] bg-no-repeat bg-cover ">
+        <div class="home-section h-[101vh] bg-[url('images/bgimg.jpg')] bg-no-repeat bg-cover relative overflow-hidden
+        min-[320px]:h-[125vh]
+        min-[375px]:h-[120vh]
+        min-[430px]:h-[110vh]
+        min-[1280px]:h-[101vh]
+        
+         ">
 
             <div class="hero-content-container select-none"> <!--hero-content-->
 
 
-                <div class="text-white pt-[190px]">
-                      <div class="pl-[100px]">
-                        <span class="text-[2vw] text-[#CACECF]">I'am</span>
-                        <span class="text-[2.9vw] pl-[5px] font-['Permanent Marker'] text-[#BEBC58]">WAI YAN KYAW,</span>
+                <div class="text-white pt-[190px]
+                min-[320px]:pt-[250px]
+                min-[640px]:pt-[210px]
+                min-[1280px]:pt-[210px]  min-[1280px]:ml-[10px]
+                ">
+                      <div class="pl-[100px]
+                      min-[320px]:pl-[50px]
+
+                      
+                      ">
+                        <span class="text-[2vw] text-[#CACECF]
+                        min-[320px]:text-[5vw]
+                        min-[640px]:text-[3.3vw]
+                        min-[1280px]:text-[2vw]
+                        ">I'am</span>
+                        <span class="text-[2.9vw] pl-[5px] font-['Permanent Marker'] text-[#BEBC58]
+                        min-[320px]:text-[7vw]
+                        min-[640px]:text-[5vw]
+                        min-[1024px]:text-[4vw]
+                        min-[1280px]:text-[2.9vw]
+                        ">WAI YAN KYAW,</span>
                       </div>
-                     <div class=" hire-text pl-[30px] leading-[50px] text-[1.6vw] text-[#CACECF]">a passionate Front-end developer focused on crafting visually appealing <br>and high-performance websites with React.js</div>
+                     <div class=" hire-text pl-[30px] leading-[50px] text-[1.6vw] text-[#CACECF]
+                     min-[320px]:text-[3.6vw]  min-[320px]:leading-[30px] min-[320px]:pl-[20px]
+                     min-[640px]:text-[2.3vw]
+                     min-[1024px]:text-[1.6vw]
+                     min-[1280px]:text-[1.6vw]
+                     ">a passionate Front-end developer focused on crafting visually appealing <br class=" min-[320px]:hidden min-[640px]:block">and high-performance websites with React.js</div>
                 </div>         
                
             </div>
@@ -64,23 +112,40 @@
 
             
         <div class=" button-div flex items-center gap-[5px] ml-[150px] mt-[45px] bt-con w-[170px] cursor-pointer
-        max-[1280px]:w-[170px] 
-        max-[1536px]:w-[300px]
-        max-[1920px]:w-[300px] mt-[90px]
+        min-[320px]:ml-[80px] min-[320px]:w-[140px]  min-[320px]:mt-[50px]
+        min-[375px]:ml-[110px] min-[375px]:mt-[60px] min-[375px]:w-[120px]
+        min-[414px]:w-[150px] min-[414px]:ml-[120px]
+        min-[430px]:ml-[125px]
+        min-[480px]:w-[130px] min-[480px]:ml-[150px]
+        min-[640px]:mt-[50px] min-[640px]:w-[140px] min-[640px]:ml-[130px]
+        min-[768px]:mt-[65px]
+        min-[1280px]:w-[150px]  min-[1280px]:ml-[180px]
         "><!--Download Resume button-->
            <a href="CV/Mr. Wai Yan Kyaw  CV.pdf" download>
              <button class=" bt bg-sky-300 text-[black]  text-center text-[1.1vw] rounded-[6px] font-[sans-serif] p-[7px] hover:bg-sky-600 hover:scale-[1.1] transistion-all duration-[.2s] ease-in-out
-             max-[1024px]:h-[35px]
-             max-[1280px]:h-[40px]
-             max-[1408px]:h-[40px]
-             max-[1920px]:h-[51px]
+              min-[320px]:h-[35px]    min-[320px]:w-[120px] min-[320px]:text-[2.5vw]
+              min-[375px]:h-[35px] min-[375px]:p-[4px]  min-[375px]:w-[120px] min-[375px]:text-[3.1vw]
+              min-[414px]:w-[120px]
+              min-[430px]:w-[130px]   min-[430px]:text-[2.5vw]
+              min-[480px]:w-[130px]   min-[480px]:text-[2.5vw]
+              min-[640px]:h-[40px]    min-[640px]:text-[2vw]
+              min-[768px]:text-[1.6vw]
+              min-[1024px]:text-[1.3vw]
+              min-[1280px]:text-[1.1vw]         min-[1280px]:w-[150px]
              ">Download Resume</button>
            </a>
            <i class="fa-solid fa-file-arrow-down text-[2.7vw] text-sky-300 icon 
-           max-[1024px]:text-[3.4vw]
-           max-[1280px]:text-[3vw]
-           max-[1408px]:text-[2.8vw]
-           max-[1536px]:text-[2.5vw]
+            min-[320px]:text-[10.9vw]
+            min-[375px]:text-[9.3vw]
+            min-[414px]:text-[8.2vw]
+            min-[430px]:text-[7.6vw]
+            min-[460px]:text-[7.4vw]
+            min-[480px]:text-[7vw]
+            min-[640px]:text-[6.1vw]
+            min-[680px]:text-[6vw]
+            min-[768px]:text-[5vw]
+            min-[1024px]:text-[3.9vw]
+            min-[1280px]:text-[2.8vw]
            "></i>
       
        </div>
@@ -90,31 +155,95 @@
 
         <!--animation one-->
            <div class="animation-one w-[30px] h-[30px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[550px] top-[200px] 
-           
+           min-[320px]:left-[20px]
+           min-[375px]:left-[20px] min-[375px]:top-[180px]
+           min-[480px]:left-[45px] min-[480px]:top-[165px]
+           min-[640px]:left-[50px] min-[640px]:top-[180px]
+           min-[768px]:left-[40px] min-[768px]:top-[150px]
+           min-[1280px]:left-[20px]  min-[1280px]:top-[233px]
            "></div>
 
            <!--animation two-->
            <div class="animation-two w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[450px] top-[430px] 
-          
+           min-[320px]:left-[200px] min-[320px]:top-[350px]
+           min-[375px]:left-[300px] min-[375px]:top-[380px]
+           min-[430px]:top-[420px]    min-[430px]:left-[330px]
+           min-[480px]:left-[340px] min-[480px]:top-[430px]
+           min-[640px]:left-[400px] min-[640px]:top-[430px] 
+           min-[768px]:left-[420px]
+           min-[1280px]:top-[400px]
            "></div>
 
            <!--animation three-->
-           <div class="animation-three w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[380px] top-[90px] 
-          
+           <div class="animation-three w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[380px] top-[90px] scale-[1.7]
+           min-[320px]:left-[190px] min-[320px]:top-[145px]
+           min-[375px]:left-[260px] min-[375px]:top-[130px]
+           min-[430px]:left-[335px]
+           min-[480px]:left-[350px]
+           min-[640px]:scale-[1.9] min-[640px]:left-[450px]
+           min-[768px]:left-[440px] min-[768px]:top-[150px]
+           min-[1280px]:left-[510px]
            "></div>
+
+
+           <!--animation three copy-->
+             
+              <div class="animation-three w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[380px] top-[90px] scale-[1.7]
+              min-[320px]:left-[0px] min-[320px]:top-[625px] min-[320px]:scale-[2]
+             
+              min-[640px]:scale-[1.9] min-[640px]:left-[50px]
+              min-[768px]:left-[30px]
+              min-[1280px]:top-[660px]
+              "></div>
 
            <!--sliding animation-->
-           <div class="sliding-animation  h-[2px] bg-sky-500 absolute top-[300px] left-[190px]
+           <div class="sliding-animation  h-[2px] bg-[#7DD3FC] absolute top-[300px] left-[190px]
+           min-[320px]:left-[50px] min-[320px]:top-[240px]
+           min-[640px]:top-[256px]  min-[640px]:left-[105px]  min-[640px]:opacity-[0.3]
+           min-[768px]:top-[265px]      min-[768px]:left-[115px]
+           min-[1024px]:top-[270px] min-[1024px]:left-[130px]
           
            "></div>
 
-           <div class="sliding-animation-two  h-[2px] bg-sky-500 absolute top-[570px] left-[190px]
-           
+           <div class="sliding-animation-two  h-[2px] bg-[#7DD3FC] absolute top-[570px] left-[190px]
+           min-[320px]:left-[0px] min-[320px]:top-[550px]
+           min-[640px]:top-[530px] min-[640px]:left-[80px]  min-[640px]:opacity-[0.3] min-[640px]:h-[1px] 
            "></div>
 
 
 
-
+          <div class="min-[320px]:ml-[90px] mt-[260px] absolute bottom-[10px] opacity-[0.6]
+        
+          min-[375px]:ml-[100px]  
+          min-[414px]:ml-[130px]
+          min-[460px]:ml-[140px]
+          min-[480px]:ml-[145px]
+          min-[640px]:hidden
+          ">
+            <div class="flex items-center gap-[3px]
+          
+            ">
+            
+                <div class="text-[white] w-[130px] text-[3vw]
+             
+                min-[375px]:w-[150px]
+                min-[414px]:w-[120px] min-[414px]:text-[2.5vw]
+                min-[430px]:w-[130px]
+                min-[460px]:w-[135px]
+                min-[480px]:w-[140px] 
+                
+                ">© Power By Wai Yan Kyaw</div>
+                <div>
+                    <a href="mailto:kieekieepl@gmail.com" target="blank"><img src="./images/29262d094bc38f937a1fdf2fa66cf5c4.png" class="w-[20px] 
+                        min-[320px]:w-[15px]
+                        min-[414px]:w-[15px]
+                     
+                        "/></a>
+                </div>
+               
+            </div>
+           
+          </div>
 
 
 
@@ -134,77 +263,289 @@
 
            <!--About section-->
 
-        <div class="about-section hidden ">
-            <div class=" bg-[#000A13]  h-[140vh] relative overflow-hidden">
+        <div class="about-section hidden h-[140vh] bg-[#000A13] relative overflow-hidden
+        min-[320px]:h-[290vh]
+        min-[375px]:h-[290vh]
+        min-[430px]:h-[210vh]
+        min-[480px]:h-[310vh]
+        min-[640px]:h-[230vh]
+        min-[768px]:h-[240vh]
+        min-[1280px]:h-[170vh]
+         ">
+            <div class="">
                 <div class="">
-                    <img src="images/1e08020e88a4b5f38126e679100ae0b0.png" class=" about-world-img w-[35%]  absolute right-[140px] top-[180px]  opacity-[1]">
+                    <img src="images/1e08020e88a4b5f38126e679100ae0b0.png" class=" about-world-img w-[35%]  absolute right-[140px] top-[180px]  opacity-[1]
+                    min-[320px]:top-[1380px]   min-[320px]:left-[80px] min-[320px]:w-[50%]  
+                    min-[375px]:top-[1380px]
+                    min-[414px]:left-[100px]
+                    min-[480px]:top-[1470px]
+                    min-[640px]:top-[150px] min-[640px]:left-[250px] min-[640px]:w-[100%] min-[640px]:opacity-[0.5]
+                    min-[1024px]:w-[35%]   min-[1024px]:left-[600px]   min-[1024px]:top-[250px] min-[1024px]:opacity-[0.6]
+                    min-[1280px]:left-[700px]
+                    ">
                     
                 </div>
-                <div class="flex items-center  gap-[10px]">
-                <div class="text-[#BD97FF] text-[1.5vw] ml-[300px] pt-[90px]">About me</div>
-                <div><i class="fa-regular fa-address-card text-[#BD97FF] pt-[95px] text-[1.5vw]"></i></div>
+                <div class="flex items-center  gap-[10px]
+                min-[320px]:gap-[5px]  
+                ">
+                <div class="text-[#BD97FF] text-[1.5vw] ml-[300px] pt-[90px]
+                min-[320px]:ml-[20px]  min-[320px]:text-[5.5vw] 
+                min-[430px]:text-[5vw]
+                min-[480px]:text-[5vw]
+                min-[640px]:ml-[50px] min-[640px]:text-[3vw]
+                min-[1024px]:text-[2vw]
+                min-[1280px]:text-[1.5vw]
+                ">About me</div>
+                <div><i class="fa-regular fa-address-card text-[#BD97FF] pt-[95px] text-[1.5vw]
+                    min-[320px]:text-[5.5vw]
+                    min-[430px]:text-[5vw]
+                    min-[480px]:text-[5vw]
+                    min-[640px]:text-[3vw]
+                    min-[1024px]:text-[2vw]
+                    min-[1280px]:text-[1.5vw]
+                    "></i></div>
                 </div>
-                    <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white hover:scale-[1.1] transition-all duration-[.5s] ease-in-out">
-                    <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">Who am I ?</div>
-                    <p class="text-[#D9C9FF] leading-[34px]"> I'm <span class="text-[#D9C9FF]  font-['Permanent Marker'] text-[1.3vw]">WAI YAN KYAW</span>, driven by a passion for front-end development <br>and crafting exceptional UI/UX</p>
+                    <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white hover:scale-[1.1] transition-all duration-[.5s] ease-in-out
+                    min-[320px]:ml-[40px]  min-[320px]:w-[240px]  
+                    min-[375px]:ml-[40px]  min-[375px]:w-[290px] 
+                    min-[414px]:ml-[40px] min-[414px]:w-[335px]
+                    min-[430px]:ml-[45px]
+                    min-[480px]:ml-[70px]
+                    min-[640px]:ml-[50px] min-[640px]:w-[550px]  min-[640px]:scale-[0.9]  min-[640px]:hover:scale-[1]
+                    ">
+                    <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]
+                    min-[320px]:text-[6vw]
+                    min-[640px]:text-[3vw]
+                    min-[1024px]:text-[2.5vw]
+                    min-[1280px]:text-[2vw]
+                    ">Who am I ?</div>
+                    <p class="text-[#D9C9FF] leading-[34px]
+                    
+                    min-[640px]:text-[2.5vw]
+                    min-[1024px]:text-[1.5vw]
+                    
+                    "> I'm <span class="text-[#BEBC58]  font-['Permanent Marker'] text-[1.3vw]
+                    min-[320px]:text-[7vw]
+                    min-[640px]:text-[2.7vw]
+                    min-[1024px]:text-[2.6vw]
+                   
+                    
+                  
+                    ">WAI YAN KYAW</span>, driven by a passion for front-end development <br>and crafting exceptional UI/UX</p>
                     </div>
 
-                        <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white  hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
-                        <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">What I do ?</div>
-                        <p class="text-[#D9C9FF] leading-[34px]">  As a front-end developer, I bring ideas to life by crafting clean,
+                        <div class="ml-[100px] bg-[#262726] w-[550px] p-[20px] mt-[50px] rounded-[9px] shadow-sm shadow-white  hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out
+                        min-[320px]:ml-[40px] min-[320px]:w-[240px] min-[320px]:mt-[40px]
+                        min-[375px]:ml-[40px]  min-[375px]:w-[290px] 
+                        min-[414px]:ml-[40px] min-[414px]:w-[335px]
+                        min-[430px]:ml-[45px]
+                        min-[480px]:ml-[70px]
+                        min-[640px]:ml-[50px]  min-[640px]:scale-[0.9] min-[640px]:w-[550px]  min-[640px]:hover:scale-[1]
+                        ">
+                        <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]
+                        min-[320px]:text-[6vw]
+                        min-[640px]:text-[3vw]
+                        min-[1024px]:text-[2.5vw]
+                        min-[1280px]:text-[2vw]
+                        ">What I do ?</div>
+                        <p class="text-[#D9C9FF] leading-[34px]
+                        min-[320px]:text-[4vw]
+                        min-[414px]:text-[3.5vw]
+                        min-[640px]:text-[2vw]
+                        min-[1024px]:text-[1.9vw]
+                        min-[1280px]:text-[1.5vw]
+                        ">  As a front-end developer, I bring ideas to life by crafting clean,
                              efficient code and designing with the user in mind. From responsive websites to custom web applications,
                              I’m passionate about transforming creative concepts into functional, visually engaging experiences</p>
                         </div>
 
 
-                        <div class="flex gap-[140px] items-center mt-[50px]">
+                        <div class=" mt-[50px]
+                        min-[320px]:mt-[40px]
+                        min-[1280px]:gap-[50px] min-[1280px]:flex min-[1280px]:items-center
+                        ">
 
-                        <div class=" bg-[#262726] text-[#D9C9FF] w-[550px] p-[20px]  ml-[100px] rounded-[9px] shadow-sm shadow-[white]   hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
-                            <div class="text-[#D9C9FF]  pb-[15px] text-[1.5vw] font-medinum">Tech Stack</div>
-                            <div class=" flex flex-col gap-[50px]">
-                                <div class="flex justify-evenly">
+                        <div class=" bg-[#262726] text-[#D9C9FF] w-[550px] p-[20px]  ml-[100px] rounded-[9px] shadow-sm shadow-[white]   hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out
+                        min-[320px]:ml-[40px] min-[320px]:w-[240px] 
+                        min-[375px]:ml-[40px]  min-[375px]:w-[290px] 
+                        min-[414px]:ml-[40px] min-[414px]:w-[335px]
+                        min-[430px]:ml-[45px]
+                        min-[480px]:ml-[70px]
+                        min-[640px]:ml-[50px]  min-[640px]:scale-[0.9] min-[640px]:w-[550px] min-[640px]:hover:scale-[1]
+                    
+                        ">
+                            <div class="text-[#D9C9FF]  pb-[15px] text-[1.5vw] font-medinum
+                            min-[320px]:text-[6vw]
+                            min-[640px]:text-[3vw]
+                            min-[1024px]:text-[2.5vw]
+                            min-[1280px]:text-[2vw]
+                            ">Tech Stack</div>
+                            <div class=" flex flex-col gap-[50px]
+                            min-[320px]:gap-[30px]
+                           
+
+                            ">
+                                <div class="flex justify-evenly 
+                                min-[320px]:gap-[2px] 
+                                ">
                                     <div class="flex flex-col items-center gap-[8px]">
-                                <img src="./tech stack img/HTML5.png" class="w-[35%]">
-                                 <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Html</div>
+                                <img src="./tech stack img/HTML5.png" class="w-[35%]
+                                min-[320px]:w-[70%]
+                                min-[480px]:w-[55%]
+                                min-[640px]:w-[35%]
+                                ">
+                                 <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                 min-[320px]:hidden
+                                 min-[414px]:block min-[414px]:text-[2.5vw]
+                                 min-[480px]:text-[2.2vw]
+                                 min-[620px]:block
+                                 min-[1024px]:text-[1.5vw]
+                                 min-[1280px]:text-[1.1vw]
+                                 ">Html</div>
                                     </div>
                                     <div class="flex flex-col items-center gap-[8px]">
-                                <img src="./tech stack img/fccd6e39db0b1c83fcb40df36d7e76c7.png" class="w-[22%]">
-                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Css</div>
+                                <img src="./tech stack img/fccd6e39db0b1c83fcb40df36d7e76c7.png" class="w-[22%]
+                                min-[320px]:w-[43%]
+                                min-[480px]:w-[35%]
+                                min-[640px]:w-[22%]
+                                ">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                min-[320px]:hidden
+                                min-[414px]:block min-[414px]:text-[2.5vw]
+                                min-[480px]:text-[2.2vw]
+                                min-[620px]:block
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Css</div>
                                     </div>
                                     <div class="flex flex-col items-center gap-[8px]">
-                                <img src="./tech stack img/JavaScript.png" class="w-[35%]">
-                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Js</div>
+                                <img src="./tech stack img/JavaScript.png" class="w-[35%]
+                                min-[320px]:w-[70%]
+                                min-[480px]:w-[55%]
+                                min-[640px]:w-[35%]
+                                ">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                min-[320px]:hidden
+                                min-[414px]:block min-[414px]:text-[2.5vw]
+                                min-[480px]:text-[2.2vw]
+                                min-[620px]:block
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Js</div>
                                     </div>
-                                    <div class="flex flex-col items-center gap-[8px]">
-                                <img src="./tech stack img/Tailwind CSS.png" class="w-[35%]">
-                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Tailwind</div>
+                                    <div class="flex flex-col items-center gap-[8px]
+                                   
+                                    ">
+                                <img src="./tech stack img/Tailwind CSS.png" class="w-[35%]
+                                min-[320px]:w-[70%]
+                                min-[480px]:w-[55%]
+                                min-[640px]:w-[35%]
+                                ">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                min-[320px]:hidden
+                                min-[414px]:block min-[414px]:text-[2.5vw]
+                                min-[480px]:text-[2.2vw]
+                                min-[620px]:block
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Tailwind</div>
                                     </div>
-                                    <div class="flex flex-col items-center gap-[8px]">
-                                <img src="./tech stack img/Bootstrap.png" class="w-[35%]">
-                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Bootstrap</div>
+                                    <div class="flex flex-col items-center gap-[8px]
+                                     
+                                    ">
+                                <img src="./tech stack img/Bootstrap.png" class="w-[35%]
+                                min-[320px]:w-[70%] 
+                                min-[480px]:w-[55%]
+                                min-[640px]:w-[35%]   
+                                ">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                min-[320px]:hidden
+                                min-[414px]:block min-[414px]:text-[2.5vw]
+                                min-[480px]:text-[2.2vw]
+                                min-[620px]:block
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Bootstrap</div>
                                     </div>
                                 </div>   
                                 <div class="flex justify-evenly"> 
-                                    <div class="flex flex-col items-center gap-[8px]">
-                                <img src="./tech stack img/React.png" class="w-[35%]">
-                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">React.js</div>
+                                    <div class="flex flex-col items-center gap-[8px]
+                                    ">
+                                <img src="./tech stack img/React.png" class="w-[35%]
+                                min-[320px]:w-[70%]
+                                min-[480px]:w-[55%]
+                                min-[640px]:w-[35%]
+                                ">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                min-[320px]:hidden
+                                min-[414px]:block min-[414px]:text-[2.5vw]
+                                min-[480px]:text-[2.2vw]
+                                min-[620px]:block
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">React.js</div>
                                     </div>
                                     <div class="flex flex-col items-center gap-[8px]">
-                                        <img src="./tech stack img/3994346_code_coding_css_html_programming_icon.png" class="w-[35%]">
-                                        <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">React router</div>
+                                        <img src="./tech stack img/3994346_code_coding_css_html_programming_icon.png" class="w-[35%]
+                                        min-[320px]:w-[70%]
+                                        min-[480px]:w-[55%]
+                                        min-[640px]:w-[35%]
+
+                                        ">
+                                        <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                        min-[320px]:hidden
+                                        min-[414px]:block min-[414px]:text-[2.5vw]
+                                        min-[480px]:text-[2.2vw]
+                                        min-[620px]:block
+                                        min-[1024px]:text-[1.5vw]
+                                        min-[1280px]:text-[1.1vw]
+                                        ">React router</div>
                                             </div>
                                    
                                     <div class="flex flex-col items-center gap-[8px]">
-                                <img src="./tech stack img/Git.png" class="w-[35%]">
-                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Git</div>
+                                <img src="./tech stack img/Git.png" class="w-[35%]
+                                min-[320px]:w-[70%]
+                                min-[480px]:w-[55%]
+                                min-[640px]:w-[35%]
+                                ">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                min-[320px]:hidden
+                                min-[414px]:block min-[414px]:text-[2.5vw]
+                                min-[480px]:text-[2.2vw]
+                                min-[620px]:block
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Git</div>
                                     </div>
                                     <div class="flex flex-col items-center gap-[8px]">
-                                <img src="./tech stack img/GitHub.png" class="w-[35%] ">
-                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Git hub</div>
+                                <img src="./tech stack img/GitHub.png" class="w-[35%]
+                                min-[320px]:w-[70%]
+                                min-[480px]:w-[55%]
+                                min-[640px]:w-[35%]
+                                ">
+                                <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                min-[320px]:hidden
+                                min-[414px]:block min-[414px]:text-[2.5vw]
+                                min-[480px]:text-[2.2vw]
+                                min-[620px]:block
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Git hub</div>
                                     </div>
                                     <div class="flex flex-col items-center gap-[8px]">
-                                        <img src="./tech stack img/Redux.png" class="w-[35%]">
-                                        <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']">Redux</div>
+                                        <img src="./tech stack img/Redux.png" class="w-[35%]
+                                        min-[320px]:w-[70%]
+                                        min-[480px]:w-[55%]
+                                        min-[640px]:w-[35%]
+                                        ">
+                                        <div class="text-[balck] text-[1.1vw] font-['Permanent Marker']
+                                        min-[320px]:hidden
+                                        min-[414px]:block min-[414px]:text-[2.5vw]
+                                        min-[480px]:text-[2.2vw]
+                                        min-[620px]:block
+                                        min-[1024px]:text-[1.5vw]
+                                        min-[1280px]:text-[1.1vw]
+                                        ">Redux</div>
                                             </div>
                              </div>
                             </div>
@@ -214,20 +555,65 @@
 
                            
 
-                            <div class="bg-[#262726]  rounded-[9px] p-[15px] w-[500px] shadow-sm shadow-white  hover:scale-[1.1]  transition-all duration-[.5s] ease-in-out">
+                            <div class="bg-[#262726]  rounded-[9px] p-[15px] w-[500px] shadow-sm shadow-[white]  hover:scale-[1.1]  transition-all duration-[.5s] ease-in-out
+                            min-[320px]:ml-[40px]  min-[320px]:w-[240px]  min-[320px]:mt-[50px]
+                            min-[375px]:ml-[40px]  min-[375px]:w-[290px] 
+                            min-[414px]:ml-[40px] min-[414px]:w-[335px]
+                            min-[430px]:ml-[45px]
+                            min-[480px]:ml-[70px]
+                            min-[640px]:ml-[75px] min-[640px]:w-[500px] min-[640px]:mt-[50px]
+                            min-[1280px]:w-[500px] 
+                            ">
                                  
                                 <div class="relative overflow-hidden">
-                                <div class="w-[15%]">
+                                <div class="w-[15%]
+                                min-[320px]:w-[25%]
+                                min-[640px]:w-[15%]
+                                min-[1024px]:w-[15%]
+                                ">
                                     <img src="./images/photo_2024-09-21_23-02-38.jpg"/>
                                 </div>
                                
-                                <div class="text-[#BEBC58]  pt-[10px] text-[1.4vw]">WAI YAN KYAW</div>
-                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]">Date of birth : 12,November,2003</div>
-                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]">Nationality : Myanmar (Burmese) </div>
-                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]">Gender : Male</div>
-                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]">Live in : Dubai, United Arab Emirates</div>
+                                <div class="text-[#BEBC58]  pt-[10px] text-[1.4vw]
+                                min-[320px]:text-[7vw]
+                                min-[414px]:text-[6vw]
+                                min-[640px]:text-[2.7vw]
+                                min-[1024px]:text-[2.5vw]
+                                min-[1280px]:text-[1.4w]
+                               
+                                ">WAI YAN KYAW</div>
+                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]
+                                min-[320px]:text-[4vw]
+                                min-[414px]:text-[3vw]
+                                min-[640px]:text-[2.4vw]
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Date of birth : 12,November,2003</div>
+                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]
+                                min-[320px]:text-[4vw]
+                                min-[414px]:text-[3vw]
+                                min-[640px]:text-[2.4vw]
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Nationality : Myanmar (Burmese) </div>
+                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]
+                                min-[640px]:text-[2.4vw]
+                                min-[414px]:text-[3vw]
+                                min-[320px]:text-[4vw]
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Gender : Male</div>
+                                <div class="text-[#D9C9FF]  pt-[10px] text-[1.1vw]
+                                min-[320px]:text-[4vw]
+                                min-[414px]:text-[3vw]
+                                min-[640px]:text-[2.4vw]
+                                min-[1024px]:text-[1.5vw]
+                                min-[1280px]:text-[1.1vw]
+                                ">Live in : Dubai, United Arab Emirates</div>
 
-                                <div class="w-[50%] absolute right-[-30px] top-[20px] opacity-[0.1]">
+                                <div class="w-[50%] absolute right-[-30px] top-[20px] opacity-[0.1]
+                                min-[320px]:w-[70%]  min-[320px]:right-[-250]
+                                ">
                                     <img src="./images/3d2899655c48dc0bed3546f9d50f39c4.png"/>
                                 </div>
 
@@ -237,11 +623,16 @@
                                 
                             </div>
 
-                            <!--                             
-                            <div class="">
-                                <img src="images/e77ce0fbea4c51ae14be393b39d836ed.png" class="w-[20%]   absolute right-[0]  opacity-[0.8]">
+                                                      
+                            <div class="hidden absolute top-[720px] opacity-[0.6]
+                            min-[1024px]:block min-[1024px]:left-[650px] min-[1024px]:top-[800px]
+                            min-[1280px]:hidden
+                            ">
+                                <img src="./images/kisspng-wanclouds-inc-cloud-expertise-automation-lifecyc-5d3cbf3d0476b8.9852286615642622050183.png" class="w-[75%]    opacity-[0.8]
                                 
-                            </div> -->
+                                ">
+                                
+                            </div> 
 
 
                           
@@ -249,43 +640,183 @@
                         
      
             </div>
+             
+              <!--Animation about-->
+              
+        <!--animation one-->
+           <div class="animation-one w-[30px] h-[30px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[550px] top-[200px] 
+           min-[320px]:left-[10px]  min-[320px]:top-[130px]
+           min-[375px]:left-[5px]  min-[375px]:top-[130px]
+           min-[414px]:top-[140px]
+           min-[480px]:left-[10px]
+           min-[640px]:left-[20px] min-[640px]:top-[330px]
+           min-[768px]:top-[370px] min-[768px]:scale-[1.5]
+           min-[1280px]:top-[386px]  min-[1280px]:left-[15px]
+           "></div>
+
+           <!--animation two-->
+           <div class="animation-two w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[450px] top-[430px] 
+           min-[320px]:left-[295px] min-[320px]:top-[410px]  min-[320px]:scale-[1.5]
+           min-[375px]:left-[345px] min-[375px]:top-[390px]  min-[375px]:scale-[1.5]
+           min-[414px]:left-[395px]  min-[414px]:top-[360px]
+           min-[430px]:top-[370px]
+           min-[480px]:left-[435px]   min-[480px]:top-[410px]
+           min-[640px]:left-[590px] min-[640px]:top-[1240px]
+           min-[768px]:top-[1300px] min-[768px]:left-[720px]
+           min-[1024px]:left-[985px]
+         
+           "></div>
+
+           <!--animation three-->
+           <div class="animation-three w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[380px] top-[90px] scale-[1.7]
+           min-[320px]:left-[200px] min-[320px]:top-[90px]
+           min-[375px]:left-[260px] min-[375px]:top-[90px]
+           min-[414px]:left-[280px]
+           min-[430px]:left-[325px]
+           min-[480px]:left-[330px]
+           min-[640px]:scale-[1.9] min-[640px]:left-[450px]
+           min-[768px]:left-[470px] min-[768px]:top-[100px]
+           min-[1024px]:left-[900px]
+           min-[1280px]:left-[1350px]  min-[1280px]:top-[80px]
+           "></div>
+
+           <!--sliding animation-->
+           <div class="sliding-animation  h-[2px] bg-[#7DD3FC] absolute top-[300px] left-[190px]
+           min-[320px]:left-[0px] min-[320px]:top-[865px] min-[320px]:opacity-[0.3]
+           min-[375px]:left-[0px] min-[375px]:top-[810px] min-[375px]:opacity-[0.3]
+           min-[414px]:top-[755px]
+           min-[430px]:top-[760px]
+           min-[480px]:top-[840px]
+           min-[640px]:top-[1220px]  min-[640px]:left-[80px]  min-[640px]:opacity-[0.3]
+           min-[768px]:top-[1290px]
+           min-[1024px]:top-[1315px]
+           min-[1280px]:top-[1100px]
+          
+           "></div>
+
+           <div class="sliding-animation-two  h-[2px] bg-[#7DD3FC] absolute top-[570px] left-[190px]
+           min-[320px]:left-[0px] min-[320px]:top-[1550px] min-[320px]:opacity-[0.3]
+           min-[414px]:top-[1570px]
+           min-[480px]:top-[1680px]
+           min-[640px]:top-[870px] min-[640px]:left-[80px]  min-[640px]:opacity-[0.3] min-[640px]:h-[1px] 
+           min-[768px]:top-[935px] min-[768px]:h-[2px]
+           min-[1024px]:top-[685px]
+           min-[1280px]:top-[165px]
+           "></div>
+
     
         </div>
 
         <!--Project section-->
 
-      <div class="project-section hidden">
-        <div class="h-[101vh] bg-[#000A13] flex  items-center gap-[70px]">
+      <div class="project-section hidden h-[101vh] bg-[#000A13] overflow-hidden
+      min-[320px]:h-[120vh]
+      min-[375px]:h-[120vh]
+      min-[768px]:h-[130vh]
+      ">
+        <div class=" flex  items-center  gap-[70px]
+        min-[320px]:flex-col min-[320px]:gap-[10px]
+        min-[640px]:flex-col min-[640px]:gap-[10px]
+        ">
 
 
-            <div class="ml-[200px]"><!--tempory close alert-->
-                <div class="h-[250px] w-[600px] bg-[#262726] rounded-[14px] shadow-sm shadow-[white]">
-                    <div class="text-[#D9C9FF] text-[1.5vw] p-[15px]">Enhancing Your experience !</div>
-                    <div class="text-[#D9C9FF] p-[30px] text-[1.2vw] leading-[40px] mt-[10px] ">This section is under development to bring you a better experience.<br>Thanks for your patience!</div>
+            <div class="ml-[200px] mt-[300px]
+            min-[320px]:ml-[0px] min-[320px]:mt-[100px]
+            min-[640px]:ml-[0px]  min-[640px]:mt-[150px]
+            "> <!--tempory close alert-->
+                <div class="h-[250px] w-[600px] bg-[#262726] rounded-[14px] shadow-sm shadow-[white]
+                min-[320px]:w-[240px]
+                min-[375px]:w-[290px]
+                min-[640px]:w-[300px] 
+                min-[768px]:w-[600px]
+                min-[1024px]:h-[150px]
+                min-[1280px]:h-[200px]
+                ">
+
+                    <div class="text-[#D9C9FF] text-[1.5vw] p-[15px]
+                    min-[320px]:text-[5vw]
+                    min-[375px]:text-[4vw] min-[375px]:pt-[15px]
+                    min-[640px]:text-[3vw]
+                    min-[768px]:text-[2.6vw]
+                    min-[1024px]:text-[2vw]
+                    min-[1280px]:text-[1.5vw]
+
+                    ">Enhancing Your experience !</div>
+
+                    <div class="text-[#D9C9FF] p-[30px] text-[1.2vw] leading-[40px] mt-[10px] 
+                    min-[320px]:text-[4vw] min-[320px]:mt-[15px] min-[320px]:pt-[0px] min-[320px]:leading-[30px]
+                    min-[375px]:text-[3.1vw] min-[375px]:mt-[15px] min-[375px]:pt-[0px] min-[320px]:leading-[30px]
+                    min-[640px]:text-[2.3vw] min-[640px]:mt-[0]
+                    min-[768px]:text-[2.3vw]
+                    min-[1024px]:text-[1.4vw]
+                      min-[1280px]:pl-[15px] min-[1280px]:text-[1.2vw] min-[1280px]:leading-[40px] min-[1280px]:pt-[0px]
+                     ">    This section is currently under development to provide you with a better experience.<br>
+                     We appreciate your patience and understanding. Stay tuned for updates</div>
 
                 </div>
 
 
             </div>
-            <div> <img src="./images/32a65747779c036a2bcac6f133df67b7.png" class="w-[45%]"/></div>
+            <div class="mt-[300px]
+            min-[320px]:mt-[70px] min-[320px]:ml-[110px]
+            min-[375px]:mt-[70px] min-[375px]:ml-[120px]
+            min-[414px]:ml-[145px]
+            min-[480px]:ml-[160px]
+            min-[640px]:mt-[30px] min-[640px]:ml-[225px]
+            min-[1024px]:mt-[20px]  min-[1024px]:ml-[340px]
+            min-[1280px]:mt-[0px] min-[1280px]:ml-[470px]
+
+            "> <img src="./images/32a65747779c036a2bcac6f133df67b7.png" class="w-[45%]
+                min-[320px]:scale-[1.8]
+                min-[480px]:scale-[1.3]
+                min-[640px]:scale-[1]
+                min-[1024px]:scale-[0.7]
+                min-[1280px]:scale-[0.6]
+                "/></div>
         </div>
 
 
       </div>
 
       <!--Social section-->
-      <div class="social-section hidden">
-        <div class="h-[101vh] bg-[#000A13]">
+      <div class="social-section hidden h-[101vh] bg-[#000A13] overflow-hidden
+      min-[320px]:h-[120vh]
+      min-[375px]:h-[120vh]
+      min-[1280px]:h-[110vh]
+      ">
+        <div class="">
 
-                <div class="flex items-center   gap-[10px]">
-                <div class="text-[#BD97FF] text-[1.5vw] ml-[90px] pt-[90px]">Reach me</div>
-                <div><i class="fa-regular fa-address-card text-[#BD97FF] pt-[95px] text-[1.5vw]"></i></div>
+                <div class="flex items-center   gap-[10px]
+                min-[320px]:ml-[0px]
+                ">
+                <div class="text-[#BD97FF] text-[1.5vw] ml-[90px] pt-[90px]
+                min-[320px]:text-[7vw]
+                min-[375px]:text-[5.5vw]   min-[375px]:ml-[115px]
+                min-[430px]:text-[5vw]
+                min-[480px]:ml-[155px] min-[480px]:text-[5vw]
+                min-[640px]:text-[3vw] min-[640px]:ml-[50px]
+                min-[1024px]:text-[2.5vw]
+                min-[1280px]:text-[1.5vw]
+                ">Reach me</div>
+                <div><i class="fa-regular fa-address-card text-[#BD97FF] pt-[95px] text-[1.5vw]
+                    min-[320px]:text-[7vw]
+                    min-[430px]:text-[5vw]
+                    min-[480px]:text-[5vw]
+                    min-[640px]:text-[3vw]
+                    min-[1024px]:text-[2.5vw]
+                    min-[1280px]:text-[1.5vw]
+                    "></i></div>
                 </div>
 
             <div class="flex justify-center">
                
             
-                <div class="flex  gap-[10px]  pt-[100px] w-[500px]">
+                <div class="flex  gap-[10px]  pt-[40px] w-[500px]
+                min-[320px]:ml-[40px]
+                min-[414px]:ml-[50px]
+              
+                min-[640px]:ml-[50px]
+                ">
                 <div >
                     <a href="mailto:kieekieepl@gmail.com" target="blank"><img src="./images/29262d094bc38f937a1fdf2fa66cf5c4.png" class="w-[35%] hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
                 </div>
@@ -307,9 +838,32 @@
               </div>
          </div>
 
-            <div class="ml-[390px] bg-[#262726] w-[550px] p-[20px] mt-[130px] rounded-[9px] shadow-sm shadow-white  hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out">
-            <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">Say Hello</div>
-            <p class="text-[#D9C9FF] leading-[34px]"> Let’s stay connected! 
+            <div class="ml-[390px] bg-[#262726] w-[550px] p-[20px] mt-[130px] rounded-[9px] shadow-sm shadow-white  hover:scale-[1.1]  transistion-all duration-[.5s] ease-in-out
+            min-[320px]:ml-[40px] min-[320px]:w-[240px] min-[320px]:mt-[50px]
+            min-[375px]:w-[290px]
+            min-[414px]:w-[335px]
+            min-[430px]:ml-[45px]
+            min-[480px]:ml-[70px]
+            min-[640px]:ml-[50px] min-[640px]:scale-[0.9] min-[640px]:hover:scale-[1] min-[640px]:mt-[60px] min-[640px]:w-[520px]
+            min-[768px]:w-[550px]   min-[768px]:ml-[100px]   min-[768px]:mt-[60px]
+            min-[1024px]:ml-[230px]
+            min-[1280px]:ml-[415px] min-[1280px]:mt-[110px]
+            ">
+            <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]
+            min-[320px]:text-[6vw]
+        
+            min-[640px]:text-[2.7vw]
+            min-[1024px]:text-[2.5vw]
+            min-[1280px]:text-[2vw]
+            ">Say Hello !</div>
+            <p class="text-[#D9C9FF] leading-[34px]
+            min-[320px]:text-[4vw]
+            min-[414px]:text-[3.2vw]
+            min-[640px]:text-[2.4vw]
+            min-[768px]:text-[2.1vw]
+            min-[1024px]:text-[1.5vw]
+            min-[1280px]:text-[1.5vw]
+            "> Let’s stay connected! 
                 Explore my latest projects, follow updates, 
                 or send a quick message directly. 
                 I’m always open to new opportunities, collaborations,
@@ -321,13 +875,62 @@
             </div>
 
             <!--Contactsection-->
-        <div class="contact-section hidden  bg-[#000A13] h-[101vh] overflow-hidden ">
+        <div class="contact-section hidden  bg-[#000A13] h-[101vh] overflow-hidden relative
+        min-[320px]:h-[180vh]
+        min-[640px]:h-[160vh]
+        min-[768px]:h-[130vh]
+        min-[1280px]:h-[105vh]
+        ">
 
-            <div class="">
+
+        <div class="flex items-center   gap-[10px]
+        min-[320px]:ml-[0px]
+        ">
+        <div class="text-[#BD97FF] text-[1.5vw] ml-[90px] pt-[90px]
+        min-[320px]:text-[7vw]
+        min-[375px]:text-[5.5vw]   min-[375px]:ml-[115px]
+        min-[430px]:text-[5vw]
+        min-[480px]:text-[5vw] min-[480px]:ml-[155px]
+        min-[640px]:text-[3vw] min-[640px]:ml-[50px]
+        min-[1024px]:text-[2.5vw]
+        min-[1280px]:text-[1.5vw]
+        ">Say Hello</div>
+        <div><i class="fa-regular fa-address-card text-[#BD97FF] pt-[95px] text-[1.5vw]
+            min-[320px]:text-[7vw]
+            min-[430px]:text-[5vw]
+            min-[480px]:text-[5vw]
+            min-[640px]:text-[3vw]
+            min-[1024px]:text-[2.5vw]
+            min-[1280px]:text-[1.5vw]
+            "></i></div>
+        </div>
+
+
+            <div>
                      
-              <div class="ml-[90px] mt-[150px] bg-[#262726] w-[550px] p-[20px]  rounded-[9px] shadow-sm shadow-white ">
-                <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]">Contact me</div>
-                <p class="text-[#D9C9FF] leading-[34px]">
+              <div class="ml-[90px] mt-[150px] bg-[#262726] w-[550px] p-[20px]  rounded-[9px] shadow-sm shadow-white 
+              min-[320px]:ml-[40px] min-[320px]:w-[240px] min-[320px]:mt-[40px]
+              min-[375px]:w-[290px]
+              min-[414px]:w-[335px]
+              min-[430px]:ml-[45px]
+              min-[480px]:ml-[70px]
+              min-[640px]:ml-[50px] min-[640px]:mt-[60px] min-[640px]:w-[550px]
+              ">
+                <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]
+                min-[320px]:text-[6vw]
+                min-[375px]:text-[5.5vw]
+                min-[640px]:text-[3vw]
+                min-[1024px]:text-[2.5vw]
+                min-[1280px]:text-[2vw]
+                ">Contact me !</div>
+                <p class="text-[#D9C9FF] leading-[34px]
+                min-[320px]:text-[4vw]
+                min-[375px]:text-[3.5vw]
+                min-[640px]:text-[2.2vw]
+                min-[768px]:text-[2vw]
+                min-[1024px]:text-[1.5vw]
+                min-[1280px]:text-[1.3vw]
+                ">
                     Get in touch! Whether you have a question, a project in mind, or just want to connect,
                      I’d love to hear from you. Feel free to reach out through the phone or directly via email, 
                     and I’ll get back to you as soon as possible.
@@ -336,28 +939,89 @@
                 </div>
 
 
-                <div class="flex items-center  gap-[10px] ">
-                    <div class="text-[#BD97FF] text-[1.5vw] absolute bottom-[90px] right-[270px] pt-[90px] opacity-[0.5]"> Dubai . UTC / GMT + 4</div>
+            
+                    <div class="text-[#BD97FF] text-[1.5vw] absolute bottom-[90px] right-[270px] pt-[90px] opacity-[0.5]
+                    min-[320px]:w-[120px]  min-[320px]:left-[110px] min-[320px]:top-[850px] min-[320px]:text-[3vw]
+                    min-[375px]:left-[120px]
+                    min-[414px]:w-[130px]
+                    min-[430px]:left-[140px]
+                    min-[480px]:w-[145px] min-[480px]:text-[2.5vw] min-[480px]:left-[170px]
+                    min-[640px]:text-[2.2vw]    min-[640px]:top-[760px] min-[640px]:w-[150px] min-[640px]:left-[240px]
+                    min-[1024px]:top-[350px]  min-[1024px]:text-[1.4vw]  min-[1024px]:left-[730px]
+                    min-[1280px]:text-[1.2vw] min-[1280px]:w-[200px] min-[1280px]:top-[420px] min-[1280px]:left-[840px]
+                    "> Dubai . UTC / GMT + 4</div>
                
-                    </div>
+               
 
 
-                    <div class="ml-[190px] mt-[130px]">
-                        <div class="text-[#BD97FF] mb-[10px]">
+                    <div class="ml-[190px] mt-[60px]
+                    min-[320px]:ml-[40px]   min-[320px]:mt-[40px]
+                    min-[430px]:ml-[45px]
+                    min-[480px]:ml-[70px]
+                    min-[640px]:ml-[50px]
+                    ">
+                        <div class="text-[#BD97FF] mb-[10px]
+                        min-[320px]:text-[4vw]
+                        min-[375px]:text-[3.5vw]
+                        min-[414px]:text-[3.2vw]
+                        min-[640px]:text-[2.5vw]
+                        min-[768px]:text-[2.1vw]
+                        min-[1024px]:text-[1.7vw]
+                        min-[1280px]:text-[1.2vw]
+                        ">
                             Live in : Dubai,United Arab Emirates
                         </div>
-                        <div class="text-[#BD97FF] mb-[10px]"><a href="tel:+971553307693"><div>Phone : +971553307693</div></a></div>
+                        <div class="text-[#BD97FF] mb-[10px]
+                        min-[320px]:text-[4vw]
+                        min-[375px]:text-[3.5vw]
+                        min-[414px]:text-[3.2vw]
+                        min-[640px]:text-[2.5vw]
+                        min-[768px]:text-[2.1vw]
+                        min-[1024px]:text-[1.7vw]
+                        min-[1280px]:text-[1.2vw]
+                        "><a href="tel:+971553307693"><div>Phone : +971553307693</div></a></div>
 
-                        <div class="text-[#BD97FF] mb-[10px]"><a href="mailto:kieekieepl@gmail.com"><div>Email : kieekieepl@gmail.com</div></a></div>
+                        <div class="text-[#BD97FF] mb-[10px]
+                        min-[320px]:text-[4vw]
+                        min-[375px]:text-[3.5vw]
+                        min-[414px]:text-[3.2vw]
+                        min-[640px]:text-[2.5vw]
+                        min-[768px]:text-[2.1vw]
+                        min-[1024px]:text-[1.7vw]
+                        min-[1280px]:text-[1.2vw]
+                        "><a href="mailto:kieekieepl@gmail.com"><div>Email : kieekieepl@gmail.com</div></a></div>
 
-                        <div class="text-[#BD97FF]"><a href="https://www.google.com/maps/dir//Boulevard+Street+-+Dubai/@25.1208701,55.257404,10.25z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5f4287917f1c27:0x78bd29d63e677212!2m2!1d55.2724533!2d25.1928741?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D" target="blank"><div>Work place : Ramada by wyndham downtown dubai</div></a></div>
+                        <div class="text-[#BD97FF]
+                        min-[320px]:text-[4vw]
+                        min-[375px]:text-[3.5vw]
+                        min-[414px]:text-[3.2vw]
+                        min-[640px]:text-[2.5vw]
+                        min-[768px]:text-[2.1vw]
+                        min-[1024px]:text-[1.7vw]
+                        min-[1280px]:text-[1.2vw]
+                        "><a href="https://www.google.com/maps/dir//Boulevard+Street+-+Dubai/@25.1208701,55.257404,10.25z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5f4287917f1c27:0x78bd29d63e677212!2m2!1d55.2724533!2d25.1928741?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D" target="blank"><div>Work place : Ramada by wyndham downtown dubai</div></a></div>
                     </div>
 
 
-                    <div class="flex justify-center absolute left-[750px] top-[60px]">
+                    <div class="flex justify-center absolute left-[750px] top-[60px]
+                    min-[320px]:left-[9px]  min-[320px]:top-[690px]
+                
+                    min-[640px]:left-[85px] min-[640px]:top-[590px]
+                    min-[768px]:left-[140px] min-[768px]:top-[635px]
+                    ">
                
             
-                        <div class="flex  gap-[10px]  pt-[100px] w-[500px]">
+                        <div class="flex  gap-[10px]  pt-[100px] w-[500px]
+                        min-[320px]:ml-[40px] min-[320px]:w-[260px] min-[320px]:pt-[10px]
+                        min-[375px]:w-[330px] min-[375px]:pt-[0px] min-[375px]:gap-[0px] min-[375px]:ml-[36px]
+                        min-[430px]:ml-[60px]
+                        min-[480px]:ml-[85px]
+                        min-[414px]:ml-[55px]
+                        min-[1024px]:ml-[220px]
+                        min-[1280px]:w-[500px] min-[1280px]:ml-[330px]
+                        
+                        
+                        ">
                         <div >
                             <a href="mailto:kieekieepl@gmail.com" target="blank"><img src="./images/29262d094bc38f937a1fdf2fa66cf5c4.png" class="w-[35%] hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
                         </div>
@@ -379,9 +1043,66 @@
                       </div>
                  </div>
 
-                  <div><img src="./images/1dd0e4254e8d1f751fa6215e63bb0484.png" class="w-[20%] absolute right-[250px] top-[250px] contact-circle-animation"/></div>
+                  <div><img src="./images/1dd0e4254e8d1f751fa6215e63bb0484.png" class="w-[20%] absolute right-[250px] top-[250px] contact-circle-animation
+                    min-[320px]:left-[100px]  min-[320px]:top-[750px]  min-[320px]:w-[40%]
+                    min-[375px]:w-[35%] min-[414px]:left-[130px]
+                    min-[480px]:left-[150px]
+                    min-[640px]:top-[670px] min-[640px]:left-[230px] min-[640px]:w-[25%]
+                    min-[768px]:top-[400px] min-[768px]:w-[20%] min-[768px]:left-[460px]
+                    min-[1024px]:left-[690px]  min-[1024px]:top-[190px]
+                    min-[1280px]:left-[780px]
+                    "/></div>
 
             </div>
+
+               <!--Contact animation-->
+
+
+               <div class="animation-one w-[30px] h-[30px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[550px] top-[200px] 
+               min-[320px]:left-[8px]  min-[320px]:top-[140px]
+               min-[414px]:top-[130px]
+               min-[640px]:left-[550px] min-[640px]:top-[320px] min-[640px]:opacity-[0.1]
+               min-[768px]:left-[560px]
+               min-[1024px]:top-[330px]
+               min-[1280px]:top-[360px] min-[1280px]:left-[340px]
+               "></div>
+    
+               <!--animation two-->
+               <div class="animation-two w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[450px] top-[430px] 
+               min-[320px]:left-[295px] min-[320px]:top-[410px]  min-[320px]:scale-[1.5]
+               min-[375px]:left-[300px]  min-[375px]:top-[495px]
+               min-[414px]:top-[470px]
+               min-[640px]:left-[360px] min-[640px]:top-[420px]
+               min-[768px]:top-[690px] min-[768px]:left-[0px]
+               "></div>
+    
+               <!--animation three-->
+               <div class="animation-three w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[380px] top-[90px] scale-[1.7]
+               min-[320px]:left-[250px] min-[320px]:top-[80px] min-[320px]:scale-[1.3]
+               min-[414px]:left-[320px]
+               min-[640px]:scale-[1.9] min-[640px]:left-[490px] min-[640px]:top-[95px]
+               min-[768px]:left-[630px]
+               min-[1024px]:top-[655px]  min-[1024px]:left-[990px]
+               min-[1280px]:top-[690px]
+               "></div>
+    
+               <!--sliding animation-->
+               <div class="sliding-animation  h-[2px] bg-[#7DD3FC] absolute top-[300px] left-[190px]
+               min-[320px]:left-[0px] min-[320px]:top-[910px] min-[320px]:opacity-[0.3]
+               min-[375px]:top-[920px]
+               min-[480px]:top-[930px]
+               min-[640px]:top-[170px]  min-[640px]:left-[50px]  min-[640px]:opacity-[0.3] min-[640px]:h-[1px]
+               min-[1280px]:top-[160px]
+              
+               "></div>
+    
+               <div class="sliding-animation-two  h-[2px] bg-[#7DD3FC] absolute top-[570px] left-[190px]
+               min-[320px]:left-[0px] min-[320px]:top-[510px] min-[320px]:opacity-[0.3]
+               min-[375px]:top-[640px]
+               min-[480px]:top-[655px]
+               min-[640px]:top-[570px] min-[640px]:left-[50px]  min-[640px]:opacity-[0.3] min-[640px]:h-[1px] 
+               min-[1280px]:top-[605px]
+               "></div>
             
           </div>
 
