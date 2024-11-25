@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="images\e2bb4c078afcf6542bf115a9b95be364.png">
+    <link rel="icon" type="image/x-icon" href="images/photo_2024-11-25_17-35-19.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,34 +20,69 @@
 
         
     <div class="nav-bars  h-[60px] flex justify-between items-center cursor-pointer  w-full fixed  top-[0px] bg-[#0F1019] z-20
-    min-[320px]:block 
+    min-[320px]:flex
+    min-[768px]:flex min-[768px]:items-center 
     min-[1024px]:flex
     "><!--Nav bar sec-->
             <div class="owner text-sky-400 font-[300] ml-[30px] text-[1.2vw] select-none 
+            min-[320px]:text-[2.5vw]
+            min-[360px]:text-[2.5vw]
+            min-[412px]:text-[2.5vw]   
+            min-[768px]:text-[2.5vw]
+            min-[1024px]:text-[1.2vw]
              max-[1536px]:ml-[50px]
              ">MY PORTFOLIO</div>
-            <ul class="nav-list text-sky-400 flex gap-14 text-[1.1vw] mr-[50px] select-none  
+            <ul class="nav-list text-sky-400 flex gap-14 text-[1.1vw] mr-[50px] select-none hidden
             min-[320px]:m-[0px] gap-[1px]
-            min-[1024px]:mr-[50px] min-[1024px]:gap-14
+            
+            min-[768px]:hidden
+            min-[1024px]:mr-[50px] min-[1024px]:gap-14 min-[1024px]:flex
+
             "></ul>
+
+            <div class="h-bar text-[#CACECF] flex mr-[30px]
+            min-[360px]:mr-[35px] min-[360px]:text-[5vw]
+            min-[412px]:mr-[35px]   min-[412px]:text-[5vw]
+            min-[768px]:flex  min-[768px]:mr-[50px]       min-[768px]:text-[3.6vw]
+            min-[1024px]:hidden
+            "><i class="fa-solid fa-bars"></i></div>
+
+            <div class=" x-mark text-[#CACECF] flex mr-[30px] hidden
+            min-[360px]:mr-[35px] 
+            min-[412px]:mr-[35px]
+            min-[768px]:mr-[50px]
+            ">
+                <i class="fa-solid fa-xmark
+                min-[360px]:text-[5vw] 
+                min-[412px]:text-[5vw]
+                min-[768px]:text-[3.6vw]
+                "></i>
+            </div>  
         </div>
 
-        <div class="underline ml-[30px] mr-[50px] fixed top-[40px] z-30
-        min-[1024px]:h-[0.5px]
+        <div class="underline ml-[30px] mr-[50px] fixed top-[40px] z-30 
+        min-[768px]:top-[45px]
+        min-[1024px]:h-[0.5px] 
+        min-[2304px]:top-[45px]
+        min-[2560px]:h-[1px]   min-[2560px]:top-[50px]
        
         "></div><!--underline-->
 
 
           <!--Download toaster-->
           <div class=" toaster complete-download bg-sky-100 flex gap-[5px] items-center justify-center w-[260px] p-[10px] rounded-[3px] border-[1px] border-sky-400 fixed  left-[340px]  z-[50] 
-          min-[320px]:left-[30px] min-[320px]:scale-[0.6] 
-          min-[375px]:left-[55px] min-[375px]:scale-[0.6] 
+          min-[320px]:left-[70px] min-[320px]:scale-[0.5] 
+          min-[360px]:left-[80px]
+          min-[375px]:left-[80px] min-[375px]:scale-[0.6] 
+          min-[412px]:left-[80px]
           min-[430px]:left-[80px]
           min-[480px]:left-[110px] min-[480px]:scale-[0.7]
            min-[640px]:left-[160px] min-[640px]:scale-[0.8]
            min-[768px]:w-[290px] min-[768px]:left-[230px]
            min-[1024px]:left-[210px]
            min-[1280px]:left-[340px]
+           min-[2304px]:left-[900px]
+           min-[2560px]:left-[1000px]
 
           ">
            
@@ -59,6 +94,7 @@
            min-[768px]:text-[2vw]
            min-[1024px]:text-[1.5vw]
            min-[1280px]:text-[1.3vw]
+           min-[2304px]:text-[1vw]
            "></i>
            
           </div>
@@ -82,8 +118,11 @@
                 <div class="text-white pt-[190px]
                 min-[320px]:pt-[250px]
                 min-[640px]:pt-[210px]
+                min-[768px]:pt-[300px]
                 min-[1280px]:pt-[290px]  min-[1280px]:ml-[10px]
                 min-[1440px]:pt-[310px]
+                min-[2304px]:pt-[505px]
+                min-[2560px]:pt-[530px]
                 ">
                       <div class="pl-[100px]
                       min-[320px]:pl-[50px]
@@ -107,6 +146,8 @@
                      min-[640px]:text-[2.3vw]
                      min-[1024px]:text-[1.6vw]
                      min-[1280px]:text-[1.6vw]
+                     min-[2304px]:leading-[55px]
+                     min-[2560px]:leading-[55px]
                      ">a passionate Front-end developer focused on crafting visually appealing <br class=" min-[320px]:hidden min-[640px]:block">and high-performance websites with React.js</div>
                 </div>         
                
@@ -123,8 +164,8 @@
         min-[430px]:ml-[125px]
         min-[480px]:w-[130px] min-[480px]:ml-[150px]
         min-[640px]:mt-[50px] min-[640px]:w-[140px] min-[640px]:ml-[130px]
-        min-[768px]:mt-[65px]
-        min-[1280px]:w-[150px]  min-[1280px]:ml-[180px]
+        min-[768px]:mt-[155px] min-[768px]:ml-[200px]
+        min-[1280px]:w-[150px]  min-[1280px]:ml-[180px] min-[1280px]:mt-[65px]
         min-[1440px]:mt-[90px]
         "><!--Download Resume button-->
            <a href="CV/Mr. Wai Yan Kyaw  CV.pdf" download>
@@ -140,7 +181,11 @@
               min-[640px]:h-[40px]    min-[640px]:text-[2vw]
               min-[768px]:text-[1.6vw]
               min-[1024px]:text-[1.3vw]
-              min-[1280px]:text-[1.1vw]         min-[1280px]:w-[150px]
+              min-[1280px]:text-[1.1vw]
+              min-[1408px]:h-[41px]         min-[1280px]:w-[150px]
+              min-[1536px]:text-[1vw]
+              min-[2304px]:w-[250px]   min-[2304px]:h-[60px]
+              min-[2560px]:w-[250px]   min-[2560px]:h-[60px]
              ">Download Resume</button>
            </a>
            <i class="fa-solid fa-file-arrow-down text-[2.7vw] text-sky-300 icon 
@@ -158,7 +203,11 @@
             min-[1024px]:text-[3.9vw]
             min-[1280px]:text-[3.1vw]
             min-[1366px]:text-[2.9vw]
+            min-[1408px]:text-[2.8vw]
             min-[1440px]:text-[2.8vw]
+            min-[1536px]:text-[2.7vw]
+            min-[2304px]:text-[2.7vw]
+            min-[2560px]:text-[2.4vw] 
            "></i>
       
        </div>
@@ -175,7 +224,11 @@
            min-[768px]:left-[40px] min-[768px]:top-[150px]
            min-[1280px]:left-[20px]  min-[1280px]:top-[308px]
            min-[1366px]:top-[310px]
+           min-[1408px]:top-[312px]
            min-[1440px]:top-[331px]
+           min-[1536px]:top-[336px]
+           min-[2304px]:top-[551px]
+           min-[2560px]:top-[580px] 
           
            "></div>
 
@@ -189,7 +242,9 @@
            min-[768px]:left-[420px]
            min-[1280px]:top-[425px]
            min-[1440px]:top-[465px]
-           "></div>
+           min-[1536px]:top-[475px]  min-[1536px]:left-[470px]
+           min-[2304px]:top-[800px]   min-[2304px]:left-[700px]
+           min-[2560px]:top-[875px]  min-[2560px]:left-[700px]           "></div>
 
            <!--animation three-->
            <div class="animation-three w-[50px] h-[50px] rounded-[50%] bg-sky-500 rotate-[13deg] absolute left-[380px] top-[90px] scale-[1.7]
@@ -198,8 +253,10 @@
            min-[430px]:left-[335px]
            min-[480px]:left-[350px]
            min-[640px]:scale-[1.9] min-[640px]:left-[450px]
-           min-[768px]:left-[440px] min-[768px]:top-[150px]
+           min-[768px]:left-[540px] min-[768px]:top-[150px]
            min-[1280px]:left-[510px]
+           min-[1536px]:left-[600px]
+           min-[2304px]:left-[800px]
            "></div>
 
 
@@ -210,9 +267,11 @@
               min-[390px]:top-[625px]
              
               min-[640px]:scale-[1.9] min-[640px]:left-[50px]
-              min-[768px]:left-[30px]
+              min-[768px]:left-[30px] min-[768px]:top-[780px]
               min-[1280px]:top-[660px]
               min-[1440px]:top-[850px]
+              min-[2304px]:top-[1270px]
+              min-[2560px]:top-[1270px] 
               "></div>
 
            <!--sliding animation-->
@@ -222,6 +281,8 @@
            min-[768px]:top-[265px]      min-[768px]:left-[115px]
            min-[1024px]:top-[265px] min-[1024px]:left-[130px]
            min-[1440px]:top-[290px]
+           min-[2304px]:top-[420px]
+           min-[2560px]:top-[390px] 
           
            "></div>
 
@@ -229,8 +290,12 @@
            min-[320px]:left-[0px] min-[320px]:top-[550px]
            min-[390px]:top-[505px]
            min-[640px]:top-[530px] min-[640px]:left-[80px]  min-[640px]:opacity-[0.3] min-[640px]:h-[1px] 
+           min-[768px]:top-[670px]
            min-[1280px]:top-[560px]
            min-[1440px]:top-[700px]
+           min-[1536px]:top-[620px]
+           min-[2304px]:top-[970px]
+           min-[2560px]:top-[970px] 
            "></div>
 
 
@@ -300,9 +365,9 @@
         min-[430px]:h-[205dvh]
         min-[480px]:h-[310dvh]
         min-[640px]:h-[230dvh]
-        min-[768px]:h-[240dvh]
+        min-[768px]:h-[180dvh]
         min-[1024px]:h-[130dvh]
-        min-[1280px]:h-[140dvh]
+        min-[1280px]:h-[170dvh]
          ">
             <div class="">
                 <div class="">
@@ -311,11 +376,14 @@
                     min-[360px]:top-[1540px] min-[360px]:left-[90px]
                     min-[375px]:top-[1380px]
                     min-[390px]:top-[1420px] min-[390px]:left-[90px]
-                    min-[414px]:left-[100px]
+                    min-[412px]:top-[1440px]
+                    min-[414px]:left-[100px] min-[414px]:top-[1400px]
                     min-[480px]:top-[1470px]
                     min-[640px]:top-[150px] min-[640px]:left-[250px] min-[640px]:w-[100%] min-[640px]:opacity-[0.5]
                     min-[1024px]:w-[35%]   min-[1024px]:left-[600px]   min-[1024px]:top-[250px] min-[1024px]:opacity-[0.6]
                     min-[1280px]:left-[700px]
+                    min-[2304px]:left-[1200px]
+                    min-[2560px]:left-[1200px]
                     ">
                     
                 </div>
@@ -348,6 +416,8 @@
                     min-[430px]:ml-[45px]
                     min-[480px]:ml-[70px]
                     min-[640px]:ml-[50px] min-[640px]:w-[550px]  min-[640px]:scale-[0.9]  min-[640px]:hover:scale-[1]
+                    min-[2304px]:w-[900px]     min-[2304px]:leading-[100px]
+                    min-[2560px]:w-[900px]   min-[2560px]:leading-[100px]
                     ">
                     <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]
                     min-[320px]:text-[6vw]
@@ -359,11 +429,14 @@
                     
                     min-[640px]:text-[2.5vw]
                     min-[1024px]:text-[1.5vw]
+                    min-[2304px]:leading-[50px]
+                    min-[2560px]:leading-[50px]
                     
                     "> I'm <span class="text-[#BEBC58]  font-['Permanent Marker'] text-[1.3vw]
                     min-[320px]:text-[7vw]
                     min-[640px]:text-[2.7vw]
                     min-[1024px]:text-[2.6vw]
+                    
                    
                     
                   
@@ -378,6 +451,8 @@
                         min-[430px]:ml-[45px]
                         min-[480px]:ml-[70px]
                         min-[640px]:ml-[50px]  min-[640px]:scale-[0.9] min-[640px]:w-[550px]  min-[640px]:hover:scale-[1]
+                        min-[2304px]:w-[900px]
+                        min-[2560px]:w-[900px]
                         ">
                         <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]
                         min-[320px]:text-[6vw]
@@ -391,6 +466,8 @@
                         min-[640px]:text-[2vw]
                         min-[1024px]:text-[1.9vw]
                         min-[1280px]:text-[1.5vw]
+                        min-[2304px]:leading-[50px]
+                        min-[2560px]:leading-[50px]
                         ">  As a front-end developer, I bring ideas to life by crafting clean,
                              efficient code and designing with the user in mind. From responsive websites to custom web applications,
                              I’m passionate about transforming creative concepts into functional, visually engaging experiences</p>
@@ -410,6 +487,8 @@
                         min-[430px]:ml-[45px]
                         min-[480px]:ml-[70px]
                         min-[640px]:ml-[50px]  min-[640px]:scale-[0.9] min-[640px]:w-[550px] min-[640px]:hover:scale-[1]
+                        min-[2304px]:w-[900px]
+                        min-[2560px]:w-[900px]
                     
                         ">
                             <div class="text-[#D9C9FF]  pb-[15px] text-[1.5vw] font-medinum
@@ -602,6 +681,8 @@
                             min-[480px]:ml-[70px]
                             min-[640px]:ml-[75px] min-[640px]:w-[500px] min-[640px]:mt-[50px]
                             min-[1280px]:w-[500px] min-[1280px]:ml-[40px]
+                            min-[2304px]:w-[900px]
+                            min-[2560px]:w-[900px]
                             ">
                                  
                                 <div class="relative overflow-hidden">
@@ -691,6 +772,8 @@
            min-[640px]:left-[20px] min-[640px]:top-[330px]
            min-[768px]:top-[370px] min-[768px]:scale-[1.5]
            min-[1280px]:top-[386px]  min-[1280px]:left-[15px]
+           min-[2304px]:top-[520px]
+           min-[2560px]:top-[516px]
            "></div>
 
            <!--animation two-->
@@ -704,6 +787,8 @@
            min-[768px]:top-[1300px] min-[768px]:left-[720px]
            min-[1024px]:left-[985px]
            min-[1280px]:top-[650px] min-[1280px]:left-[1235px]
+           min-[2304px]:top-[850px]
+           min-[2560px]:top-[900px]
           
         
          
@@ -719,8 +804,11 @@
            min-[480px]:left-[330px]
            min-[640px]:scale-[1.9] min-[640px]:left-[450px]
            min-[768px]:left-[470px] min-[768px]:top-[100px]
+          
            min-[1024px]:left-[900px]
            min-[1280px]:left-[1350px]  min-[1280px]:top-[80px]
+           min-[2304px]:top-[120px]    min-[2304px]:left-[2000px]
+           min-[2560px]:top-[120px]    min-[2560px]:left-[2200px]
            "></div>
 
            <!--sliding animation-->
@@ -735,9 +823,14 @@
            min-[480px]:top-[840px]
            min-[640px]:top-[1220px]  min-[640px]:left-[80px]  min-[640px]:opacity-[0.3]
            min-[768px]:top-[1290px]
+           min-[810px]:top-[1320px]
+           min-[834px]:top-[1350px]
            min-[1024px]:top-[1315px]
            min-[1280px]:top-[1030px]
+           min-[1408px]:top-[1080px]
            min-[1440px]:top-[1100px]
+           min-[2304px]:top-[1580px]   min-[2304px]:left-[100px]
+           min-[2560px]:top-[1580px]
           
            "></div>
 
@@ -746,15 +839,20 @@
            min-[320px]:left-[0px] min-[320px]:top-[1550px] min-[320px]:opacity-[0.3]
            min-[360px]:top-[1700px]
            min-[390px]:top-[1585px]
+           min-[412px]:top-[1620px]
+           min-[414px]:top-[1600px]
            min-[428px]:top-[1600px]
            min-[430px]:top-[1615px]
-           min-[414px]:top-[1600px]
            min-[480px]:top-[1680px]
            min-[640px]:top-[870px] min-[640px]:left-[80px]  min-[640px]:opacity-[0.3] min-[640px]:h-[1px] 
            min-[768px]:top-[935px] min-[768px]:h-[2px]
+           min-[810px]:top-[950px]
+           min-[834px]:top-[990px]
            min-[1024px]:top-[685px]
            min-[1280px]:top-[165px]
            min-[1440px]:top-[155px]
+           min-[2304px]:top-[180px]   min-[2304px]:left-[100px]
+           min-[2560px]:top-[180px]   min-[2560px]:left-[100px]
            "></div>
 
     
@@ -769,7 +867,7 @@
       min-[390px]:h-[101dvh]
       min-[768px]:h-[130dvh]
       min-[1024px]:h-[110dvh]
-      min-[1280px]:h-[101dvh]
+      min-[1280px]:h-[115dvh]
       ">
         <div class=" flex  items-center  gap-[70px]
         min-[320px]:flex-col min-[320px]:gap-[10px]
@@ -791,6 +889,8 @@
                 min-[768px]:w-[600px]
                 min-[1024px]:h-[150px]
                 min-[1280px]:h-[200px]
+                min-[2304px]:w-[900px]   min-[2304px]:h-[300px]
+                min-[2560px]:w-[900px]   min-[2560px]:h-[300px]
                 ">
 
                     <div class="text-[#D9C9FF] text-[1.5vw] p-[15px]
@@ -801,6 +901,7 @@
                     min-[768px]:text-[2.6vw]
                     min-[1024px]:text-[2vw]
                     min-[1280px]:text-[1.5vw]
+                    min-[1536px]:text-[1.3vw]
 
                     ">Enhancing Your experience !</div>
 
@@ -812,6 +913,8 @@
                     min-[768px]:text-[2.3vw]
                     min-[1024px]:text-[1.4vw]
                       min-[1280px]:pl-[15px] min-[1280px]:text-[1.2vw] min-[1280px]:leading-[40px] min-[1280px]:pt-[0px]
+                      min-[1536px]:text-[1vw]
+                      min-[2304px]:text-[1.1vw]
                      ">    This section is currently under development to provide you with a better experience.<br>
                      We appreciate your patience and understanding. Stay tuned for updates</div>
 
@@ -827,8 +930,15 @@
             min-[414px]:ml-[145px]
             min-[480px]:ml-[160px]
             min-[640px]:mt-[30px] min-[640px]:ml-[225px]
+            min-[768px]:ml-[250px]
+            min-[810px]:ml-[275px]
+           
             min-[1024px]:mt-[20px]  min-[1024px]:ml-[340px]
             min-[1280px]:mt-[0px] min-[1280px]:ml-[450px]
+            min-[1408px]:ml-[490px]
+            min-[1536px]:ml-[530px]
+            min-[2304px]:ml-[790px]
+            min-[2560px]:ml-[880px]
 
             "> <img src="./images/32a65747779c036a2bcac6f133df67b7.png" class="w-[45%]
                 min-[320px]:scale-[1.8]
@@ -885,6 +995,8 @@
                 min-[414px]:ml-[50px]
               
                 min-[640px]:ml-[50px]
+                min-[2304px]:mt-[200px]
+                min-[2560px]:mt-[200px]
                 ">
                 <div >
                     <a href="mailto:kieekieepl@gmail.com" target="blank"><img src="./images/29262d094bc38f937a1fdf2fa66cf5c4.png" class="w-[35%] hover:scale-[1.1] transistion-all duration-[.3s] ease-in-out"/></a>
@@ -917,10 +1029,15 @@
             min-[480px]:ml-[70px]
             min-[640px]:ml-[50px] min-[640px]:scale-[0.9] min-[640px]:hover:scale-[1] min-[640px]:mt-[60px] min-[640px]:w-[520px]
             min-[768px]:w-[550px]   min-[768px]:ml-[100px]   min-[768px]:mt-[60px]
+            min-[810px]:ml-[120px]
             min-[1024px]:ml-[230px]
-            min-[1280px]:ml-[340px] min-[1280px]:mt-[110px]
+            min-[1280px]:ml-[350px] min-[1280px]:mt-[110px]
             min-[1366px]:ml-[390px]
-            min-[1440px]:ml-[420px]
+            min-[1408px]:ml-[420px]
+            min-[1440px]:ml-[425px]
+            min-[1536px]:ml-[475px]
+            min-[2304px]:ml-[860px]
+            min-[2560px]:ml-[980px]
             ">
             <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]
             min-[320px]:text-[6vw]
@@ -928,6 +1045,7 @@
             min-[640px]:text-[2.7vw]
             min-[1024px]:text-[2.5vw]
             min-[1280px]:text-[2vw]
+            min-[1536px]:text-[1.5vw]
             ">Say Hello !</div>
             <p class="text-[#D9C9FF] leading-[34px]
             min-[320px]:text-[4vw]
@@ -936,6 +1054,7 @@
             min-[768px]:text-[2.1vw]
             min-[1024px]:text-[1.5vw]
             min-[1280px]:text-[1.5vw]
+            min-[1536px]:text-[1.1vw]
             "> Let’s stay connected! 
                 Explore my latest projects, follow updates, 
                 or send a quick message directly. 
@@ -957,7 +1076,7 @@
         min-[640px]:h-[160dvh]
         min-[768px]:h-[130dvh]
         min-[1024px]:h-[110dvh]
-        min-[1280px]:h-[101dvh]
+        min-[1280px]:h-[115dvh]
         ">
 
 
@@ -994,6 +1113,8 @@
               min-[430px]:ml-[45px]
               min-[480px]:ml-[70px]
               min-[640px]:ml-[50px] min-[640px]:mt-[60px] min-[640px]:w-[550px]
+              min-[2304px]:w-[900px]  min-[2304px]:mt-[150px]
+              min-[2560px]:w-[900px]   min-[2560px]:mt-[150px]
               ">
                 <div class="text-[#D9C9FF]  pb-[10px] text-[1.4vw]
                 min-[320px]:text-[6vw]
@@ -1001,6 +1122,7 @@
                 min-[640px]:text-[3vw]
                 min-[1024px]:text-[2.5vw]
                 min-[1280px]:text-[2vw]
+                min-[1536px]:text-[1.5vw]
                 ">Contact me !</div>
                 <p class="text-[#D9C9FF] leading-[34px]
                 min-[320px]:text-[4vw]
@@ -1009,6 +1131,7 @@
                 min-[768px]:text-[2vw]
                 min-[1024px]:text-[1.5vw]
                 min-[1280px]:text-[1.3vw]
+                min-[1536px]:text-[1.1vw]
                 ">
                     Get in touch! Whether you have a question, a project in mind, or just want to connect,
                      I’d love to hear from you. Feel free to reach out through the phone or directly via email, 
@@ -1028,9 +1151,14 @@
                     min-[430px]:left-[140px]
                     min-[480px]:w-[145px] min-[480px]:text-[2.5vw] min-[480px]:left-[170px]
                     min-[640px]:text-[2.2vw]    min-[640px]:top-[760px] min-[640px]:w-[150px] min-[640px]:left-[240px]
-                    min-[1024px]:top-[350px]  min-[1024px]:text-[1.4vw]  min-[1024px]:left-[730px]
+                    min-[768px]:w-[200px] min-[768px]:left-[280px]
+                    min-[810px]:left-[300px]
+                    min-[1024px]:top-[350px]  min-[1024px]:text-[1.4vw]  min-[1024px]:left-[730px] min-[1024px]:w-[150px]
                     min-[1280px]:text-[1.2vw] min-[1280px]:w-[200px] min-[1280px]:top-[420px] min-[1280px]:left-[825px]
+                    min-[1408px]:left-[840px]
                     min-[1440px]:left-[900px]  min-[1440px]:top-[450px]
+                    min-[2304px]:w-[350px]   min-[2304px]:left-[1590px]  min-[2304px]:top-[900px]
+                    min-[2560px]:w-[350px]   min-[2560px]:left-[1800px]   min-[2560px]:top-[900px]
                     "> Dubai . UTC / GMT + 4</div>
                
                
@@ -1041,6 +1169,8 @@
                     min-[430px]:ml-[45px]
                     min-[480px]:ml-[70px]
                     min-[640px]:ml-[50px]
+                    min-[2304px]:mt-[120px]
+                    min-[2560px]:mt-[120px]
                     ">
                         <div class="text-[#BD97FF] mb-[10px]
                         min-[320px]:text-[4vw]
@@ -1050,6 +1180,7 @@
                         min-[768px]:text-[2.1vw]
                         min-[1024px]:text-[1.7vw]
                         min-[1280px]:text-[1.2vw]
+                        min-[1536px]:text-[1.1vw]
                         ">
                             Live in : Dubai,United Arab Emirates
                         </div>
@@ -1061,6 +1192,7 @@
                         min-[768px]:text-[2.1vw]
                         min-[1024px]:text-[1.7vw]
                         min-[1280px]:text-[1.2vw]
+                        min-[1536px]:text-[1.1vw]
                         "><a href="tel:+971553307693"><div>Phone : +971553307693</div></a></div>
 
                         <div class="text-[#BD97FF] mb-[10px]
@@ -1071,6 +1203,7 @@
                         min-[768px]:text-[2.1vw]
                         min-[1024px]:text-[1.7vw]
                         min-[1280px]:text-[1.2vw]
+                        min-[1536px]:text-[1.1vw]
                         "><a href="mailto:kieekieepl@gmail.com"><div>Email : kieekieepl@gmail.com</div></a></div>
 
                         <div class="text-[#BD97FF]
@@ -1081,6 +1214,7 @@
                         min-[768px]:text-[2.1vw]
                         min-[1024px]:text-[1.7vw]
                         min-[1280px]:text-[1.2vw]
+                        min-[1536px]:text-[1.1vw]
                         "><a href="https://www.google.com/maps/dir//Boulevard+Street+-+Dubai/@25.1208701,55.257404,10.25z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3e5f4287917f1c27:0x78bd29d63e677212!2m2!1d55.2724533!2d25.1928741?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D" target="blank"><div>Work place : Ramada by wyndham downtown dubai</div></a></div>
                     </div>
 
@@ -1100,9 +1234,15 @@
                         min-[430px]:ml-[60px]
                         min-[480px]:ml-[85px]
                         min-[414px]:ml-[55px]
+                        min-[810px]:ml-[100px]
+                        min-[834px]:ml-[110px]
                         min-[1024px]:ml-[220px]
                         min-[1280px]:w-[500px] min-[1280px]:ml-[250px]
+                        min-[1408px]:ml-[340px]
                         min-[1440px]:pt-[130px]  min-[1440px]:ml-[350px]
+                        min-[1536px]:pt-[80px] min-[1536px]:ml-[380px]
+                        min-[2304px]:ml-[790px]   min-[2304px]:pt-[490px]
+                        min-[2560px]:ml-[820px]   min-[2560px]:pt-[490px]
                         
                         
                         ">
@@ -1134,9 +1274,12 @@
                     min-[480px]:left-[150px]
                     min-[640px]:top-[670px] min-[640px]:left-[230px] min-[640px]:w-[25%]
                     min-[768px]:top-[400px] min-[768px]:w-[20%] min-[768px]:left-[460px]
+                    min-[810px]:left-[490px]   min-[810px]:top-[430px]
                     min-[1024px]:left-[690px]  min-[1024px]:top-[190px]
                     min-[1280px]:left-[780px]
                     min-[1440px]:left-[840px]
+                    min-[2304px]:top-[420px] min-[2304px]:left-[1500px]
+                    min-[2560px]:left-[1700px]   min-[2560px]:top-[420px]
                     "/></div>
 
             </div>
@@ -1149,9 +1292,15 @@
                min-[414px]:top-[130px]
                min-[640px]:left-[550px] min-[640px]:top-[320px] min-[640px]:opacity-[0.1]
                min-[768px]:left-[560px]
+               min-[810px]:left-[165px]   min-[810px]:top-[358px]
+               min-[834px]:left-[200px]   min-[834px]:top-[360px]
                min-[1024px]:top-[330px]
-               min-[1280px]:top-[351px] min-[1280px]:left-[200px]
+               min-[1280px]:top-[352px] min-[1280px]:left-[200px]
                min-[1440px]:top-[362px]  min-[1440px]:left-[340px]
+               min-[1536px]:left-[200px] min-[1536px]:top-[355px]
+               min-[2304px]:top-[450px]   min-[2304px]:left-[800px]
+               min-[2560px]:top-[495px]    min-[2560px]:left-[300px]
+            
                "></div>
     
                <!--animation two-->
@@ -1163,6 +1312,8 @@
                min-[640px]:left-[360px] min-[640px]:top-[420px]
                min-[768px]:top-[690px] min-[768px]:left-[0px]
                min-[1440px]:top-[780px]
+               min-[2304px]:top-[1300px]
+               min-[2560px]:top-[1400px]
                "></div>
     
                <!--animation three-->
@@ -1176,6 +1327,8 @@
                min-[1024px]:top-[655px]  min-[1024px]:left-[990px]
                min-[1280px]:top-[690px]
                min-[1440px]:left-[1300px]
+               min-[2304px]:top-[200px]   min-[2304px]:left-[2000px]
+               min-[2560px]:top-[200px]    min-[2560px]:left-[2300px]
                "></div>
     
                <!--sliding animation-->
@@ -1184,7 +1337,11 @@
                min-[375px]:top-[920px]
                min-[480px]:top-[930px]
                min-[640px]:top-[170px]  min-[640px]:left-[50px]  min-[640px]:opacity-[0.3] min-[640px]:h-[1px]
+               min-[768px]:top-[150px]
+               min-[1024px]:top-[150px]
                min-[1280px]:top-[150px]
+               min-[2304px]:top-[250px]
+               min-[2560px]:top-[250px]
               
                "></div>
     
@@ -1193,10 +1350,49 @@
                min-[375px]:top-[640px]
                min-[480px]:top-[655px]
                min-[640px]:top-[570px] min-[640px]:left-[50px]  min-[640px]:opacity-[0.3] min-[640px]:h-[1px] 
+               min-[768px]:top-[580px]
+               min-[810px]:top-[600px]
+               min-[1024px]:top-[580px]
                min-[1280px]:top-[605px]
                min-[1440px]:top-[620px]
+               min-[2304px]:top-[900px]
                "></div>
             
+          </div>
+
+          <!--Burger Menu bar-->
+          <div class=" menu h-[101dvh] w-full bg-[#000A13]  overflow-hidden  
+         
+          ">
+            <div class="menu-list pt-[200px]  select-none flex flex-col gap-[120px] 
+           
+            ">
+                  <ul class="menu-ul flex flex-col justify-center items-center gap-[50px] text-[#38BDF8] text-[3vw] 
+
+                   "></ul>
+
+
+                  <div class="flex  items-center justify-center gap-[3px]
+                  min-[390px]:gap-[5px] min-[390px]:w-full
+                      
+                  ">
+                  
+                      <div class="text-[white]  text-[1.8vw]
+                   
+                   
+                      
+                      ">© Power By Wai Yan Kyaw</div>
+                      <div>
+                          <a href="mailto:kieekieepl@gmail.com" target="blank"><img src="./images/29262d094bc38f937a1fdf2fa66cf5c4.png" class="w-[10px] 
+                            min-[768px]:w-[20px]
+                          
+                           
+                              "/></a>
+                      </div>
+                     
+                  </div>
+
+            </div>
           </div>
 
 

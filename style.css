@@ -3,6 +3,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+body{
+    background-color: #000A13;
+}
 .nav-list{
     font-family: 'Roboto Mono';
     font-weight: 400;
@@ -94,5 +97,14 @@ opacity: 0.1;
     from{transform: rotate(0deg);}
     to{transform: rotate(360deg);}
 }
+.h-flex{
+    transition: all .4s ease-in-out;
+}
 
+.menu{
+  position:absolute;
+  left: -768px;
+  top:0px;
+  transition: all .5s ease-in-out;
 
+}
