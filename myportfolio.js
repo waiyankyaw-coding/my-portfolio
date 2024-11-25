@@ -211,7 +211,7 @@ for (let i = 0; i < navListArray.length; i++) {
   })
 
 };
-
+menuPage.style.left = `-${window.innerWidth}px`; 
 
 bar.addEventListener("click",()=>{
  xMark.style.display= "block";
@@ -229,7 +229,8 @@ xMark.addEventListener("click",()=>{
   xMark.style.display = "none";
   bar.style.display = "block";
   // menuPage.style.display = "none";
-  menuPage.style.left = "-768px"; 
+  menuPage.style.left = `-${window.innerWidth}px`; 
+ 
   Home.style.display = "block";
  
 })

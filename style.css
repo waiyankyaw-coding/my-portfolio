@@ -103,8 +103,8 @@ opacity: 0.1;
 
 .menu{
   position:absolute;
-  left: -768px;
-  top:0px;
+ 
+   top:0px;
   transition: all .5s ease-in-out;
 
 }
