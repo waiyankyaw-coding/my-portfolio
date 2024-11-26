@@ -239,14 +239,14 @@ xMark.addEventListener("click",()=>{
 let button = document.querySelector(".bt");
 let downloadedToaster = document.querySelector(".complete-download");
 let offHight = downloadedToaster.offsetHeight;
-downloadedToaster.style.top = `-${offHight}`+"1"+"px";
+downloadedToaster.style.top = `-${offHight}px`;
 button.addEventListener("click",()=>{
 setTimeout(()=>{
     downloadedToaster.style.top = "15px";
 },100)
 
 setTimeout(()=>{
-    downloadedToaster.style.top = `-${offHight}`+"1"+"px";;
+    downloadedToaster.style.top = `-${offHight}px`;
 },4000)
    
 });
